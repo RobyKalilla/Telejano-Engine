@@ -4,4 +4,4 @@ Forked from TomazQuake by Tomaz.
 
 Original Quake code by ID Software.
 
-Repo for archival purposes.
+Repo for archival purposes only.
