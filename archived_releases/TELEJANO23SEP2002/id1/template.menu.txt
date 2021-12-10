@@ -1,0 +1,38 @@
+menu_mode 1
+menu_clear
+
+menu_0 "(Menu Name)"
+
+menu_1 "(Menu Item #1 Command Name)"
+xmenu_1 "(Menu Item #1 Command)"
+
+menu_2 "(Menu Item #2 Command Name)"
+xmenu_2 "(Menu Item #2 Command)"
+
+menu_3 "(Menu Item #3 Command Name)"
+xmenu_3 "(Menu Item #3 Command)"
+
+menu_4 "(Menu Item #4 Command Name)"
+xmenu_4 "(Menu Item #4 Command)"
+
+menu_5 "(Menu Item #5 Command Name)"
+xmenu_5 "(Menu Item #5 Command)"
+
+menu_6 "(Menu Item #6 Command Name)"
+xmenu_6 "(Menu Item #6 Command)"
+
+menu_7 "(Menu Item #7 Command Name)"
+xmenu_7 "(Menu Item #7 Command)"
+
+menu_8 "Main Menu"
+xmenu_8 "menu_clear; exec main.menu.txt"
+
+menu_9 "Close Menu"
+xmenu_9 "menu_clear; menu_mode 0"
+
+menu_select 1
+menu_items 9
+
+bind "[" "menu_up"
+bind "]" "menu_down"
+bind "ENTER" "menu_exec"

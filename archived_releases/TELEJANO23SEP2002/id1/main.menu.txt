@@ -1,0 +1,42 @@
+menu_mode 1
+
+menu_clear
+menu_0 "Select GameModes"
+
+menu_1 "Zoom +"
+xmenu_1 "menu_big"
+
+menu_2 "Zoom -"
+xmenu_2 "menu_small"
+
+menu_3 " FrikBots..."
+xmenu_3 "exec frikbot.menu.txt"
+
+menu_4 " Video Options..."
+xmenu_4 "exec video.menu.txt"
+
+menu_5 " WFX Options..."
+xmenu_5 "exec wfx.menu.txt"
+
+menu_6 " DM Maps..."
+xmenu_6 "exec dmmaps.menu.txt"
+
+menu_7 " Modes Menu..."
+xmenu_7 "exec modes.menu.txt"
+
+menu_8 "Close Menu"
+xmenu_8 "menu_mode 0; bind enter execmenu"
+
+menu_select 1
+menu_items 8
+
+bind [ menu_up
+bind ] menu_down
+bind enter menu_exec
+
+alias execmenu "exec main.menu.txt"
+
+
+
+
+

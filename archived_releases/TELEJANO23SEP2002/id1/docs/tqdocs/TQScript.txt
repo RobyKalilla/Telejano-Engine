@@ -1,0 +1,83 @@
+=============================================================
+TQScript notes:
+=============================================================
+
+TQScript is basically the rscript from MrGlquake by MrG.... With some small changes
+
+The scripts goes into a file called textures.txt which should be in the id1/scripts or the mod/scripts folder...
+
+A basic script looks like the following:
+
+texture_name
+{
+	effect parameter1 parameter2
+	set flag value
+	stage next_stage_name
+}
+
+A script must begin with a texture_name followed by an opening brace. It must end with a closing brace after all the code for it.
+
+=============================================================
+Effects List
+=============================================================
+
+turb <power> <movediv>
+-----------------------
+Turbulant effect. <power> does little to effect the turb. A higher <movediv> makes the turb less.
+
+eg: turb 1 1
+
+turbvert <power>
+-----------------
+Turbulant effect that changes vertices instead of texture mapping coordinates.
+
+eg: turbvert 8
+
+scroll <xspeed> <yspeed>
+-------------------------
+Scrolls the texture along the x and y axis at the defined speed.
+
+eg: scroll 0.1 0
+
+stage <stage_name>
+-------------------
+Specify which script to draw as the next layer of the image. Be careful that you dont create a recursive loop of rendering with this.
+
+eg: stage conback
+
+map <texture_name>
+-------------------
+Set the texture to be used to <texture_name>. If not used, the texture specified in the BSP will be used instead.
+
+eg: map textures/wall01
+
+anim <number> <texture_name_1> <texture_name_2> ...
+----------------------------------------------------
+Sets the textures animation frames. Maximum 20 frames.
+
+=============================================================
+Flags
+=============================================================
+
+To set a flag in a script, use the 'set' command, eg:
+
+	set <flag> <value>
+
+Valid flags are:
+=================
+
+alpha
+------
+Set the alpha value of the texture to <value>.
+
+texscale
+---------
+Enables scaling of the texture by <value>.
+
+envmap
+-------
+Enable environmental mapping on the stage.
+
+animtime
+---------
+Sets the timing between animation frame changes to <value>

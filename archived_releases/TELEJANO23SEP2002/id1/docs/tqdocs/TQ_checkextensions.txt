@@ -1,0 +1,189 @@
+TomazQuake supported extension list, version 1.01
+
+Short text on how to use the versioning in your mods to use TQ specific stuff but still make the mod work in original quake.
+
+This standards are still in development and are VERY likely to change.
+
+Supported extension
+
+##########
+
+TQ_DLIGHTS	
+
+field definition:
+.float glow_size;
+.float glow_red; 
+.float glow_green;
+.float glow_blue;
+
+customizable glowing light effect on the entity, glow_red, glow_green and glow_blue is the color in the range 0-1. 
+glow_size is is the size of the glow (duh) in the range 0-1024.
+
+#######
+
+TQ_SNOW
+
+temp entity definitions:
+float TE_SNOW = 14;
+
+field definition:
+.float	flakes;
+
+creates a shower of snow.
+
+#######
+
+TQ_RAIN
+
+temp entity definitions:
+float TE_RAIN = 15;
+
+field definition:
+.float	drops;
+
+creates a shower of rain.
+
+#########
+
+TQ_PLASMA
+
+temp entity definitions:
+float TE_PLASMA = 16;
+
+new weapon.
+
+############
+
+TQ_RAILTRAIL
+
+temp entity definitions:
+float TE_RAILTRAIL = 17;
+
+new weapon.
+
+#########
+
+TQ_SLOWMO
+
+not tested yet
+
+############
+
+DP_ENT_ALPHA
+
+field definition:
+.float alpha;
+
+controls opacity of the entity, 0.0 is forced to be 1.0 (otherwise everything would be invisible), use -1 if you want to make something invisible, 1.0 is solid (like normal).
+
+############
+
+DP_ENT_SCALE
+
+field definitions:
+.float scale;
+
+controls rendering scale of the entity, 0.0 is forced to be 1.0 (otherwise everything would be invisible), max scale is 4.
+
+###############
+
+DP_QUAKE2_MODEL
+
+shows that the engine supports Quake2 .md2 files.
+
+###############
+
+DP_HALFLIFE_MAP
+
+simply indicates that the engine supports HalfLife maps (BSP version 30, NOT the QER RGBA ones which are also version 30).
+
+######################
+
+DP_SV_DRAWONLYTOCLIENT
+
+field definitions:
+.entity drawonlytoclient;
+
+the entity is only visible to the specified client.
+
+####################
+
+DP_SV_NODRAWTOCLIENT
+
+field definitions:
+.entity nodrawtoclient;
+
+the entity is not visible to the specified client.
+
+####################
+
+add this to defs.qc
+
+after
+
+// void(entity e) setspawnparms			= #78;	// set parm1... to the values at level start for coop respawn
+
+add:
+
+float(string name) checkextension 			= #99; 
+
+then at bottom add:
+
+float qsg_allowed;
+
+float TQ_DLIGHTS;
+float TQ_RAIN;
+float TQ_SNOW;
+float TQ_RAILTRAIL;
+float TQ_PLASMA;
+float TQ_SLOWMO
+float DP_ENT_ALPHA;
+float DP_ENT_SCALE;
+float DP_QUAKE2_MODEL;
+float DP_HALFLIFE_MAP;
+float DP_SV_DRAWONLYTOCLIENT;
+float DP_SV_NODRAWTOCLIENT;
+
+and add this to world.qc in void() worldspawn =
+
+	qsg_allowed = cvar("QSG_VERSION");
+
+	if (qsg_allowed)
+	{
+		TQ_DLIGHTS 		= checkextension("TQ_DLIGHTS");
+		TQ_RAIN 		= checkextension("TQ_RAIN");
+		TQ_SNOW 		= checkextension("TQ_SNOW");
+		TQ_RAILTRAIL 		= checkextension("TQ_RAILTRAIL");
+		TQ_PLASMA 		= checkextension("TQ_PLASMA");
+		TQ_SLOWMO		= checkextension("TQ_SLOWMO");
+		DP_ENT_ALPHA 		= checkextension("DP_ENT_ALPHA");
+		DP_ENT_SCALE 		= checkextension("DP_ENT_SCALE");
+		DP_QUAKE2_MODEL 	= checkextension("DP_QUAKE2_MODEL");
+		DP_HALFLIFE_MAP 	= checkextension("DP_HALFLIFE_MAP");
+		DP_SV_DRAWONLYTOCLIENT	= checkextension("DP_SV_DRAWONLYTOCLIENT");
+		DP_SV_NODRAWTOCLIENT	= checkextension("DP_SV_NODRAWTOCLIENT");
+	}
+
+now if the engine u are using have any of these... then it will return true
+
+so for example
+
+void () fade_bullethole =
+{
+	if (DP_ENT_ALPHA)
+	{
+		self.alpha = self.alpha - 0.05;
+	
+		if (self.alpha < 0.06)
+			self.think = SUB_Remove;
+		else
+			self.think = fade_bullethole;
+		self.nextthink = time + 0.1;
+	}
+	else
+		self.think = SUB_Remove;
+};
+
+if the engine currently running supports DP_ENT_ALPHA.... then the bullethole will fade... if not it will just simply be removed...
+
+I suck at explaining... so this is the best i can do at the moment...

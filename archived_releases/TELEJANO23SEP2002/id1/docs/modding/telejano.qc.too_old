@@ -1,0 +1,664 @@
+/////////////////////
+//  
+//  telejano.qc 
+//  BETA!
+//  This .qc file show some of the features of the engine
+//  for quakeC coders.
+//  
+// Please visit http://telejano.berlios.de/wiki3
+//  
+/////////////////////
+
+
+/*
+
+ HOW TO install this for a mod.
+
+ * * * 
+
+Insert this BEFORE "end_sys_fields;" in your defs.qc file.:
+
+// Mod designed only for Telejano 
+// Place this progs.dat file inside a  .tpak file, will override other progs.dat
+// files in your mod in the Telejano engine.
+
+
+.float msg_forwardmove;  
+.float msg_sidemove;
+.float msg_upmove;
+	// Values that store player input movement
+
+.string weaponmodel2;// Alfa, dont work.
+
+.float effects2;	// store effects2 bitmask
+.float effects3;  	// store effects3 index
+
+.float magmultiplier; // For magnetic movetypes
+
+// Mod designed only for Telejano Beta
+
+ * * * 
+
+Without this, the engine can run mods, but if you need
+ the FX features of telejano you need this.
+
+Now insert this in world.qc in the worldspawn() function:
+
+//Precache Telejano Builtin FX models.
+// You will need the telejano.pak 
+ PrecacheEngine();
+//Precache Telejano Builtin FX models.
+
+ 
+ * * * 
+
+You need a telejano.tpak file in your mod dir for harcore fx.
+
+	*/
+
+/* - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x*/
+
+
+/* 
+ * Builtin models files 
+ *
+ */
+
+/*
+// Informative, uncomment if you need
+// You have then in the telejano.pak file
+string FX_NULL = "progs/fx_void.mdl";
+string FX_FIRE	= "progs/fx_ffire.mdl";
+string FX_ALIEN	= "progs/fx_alien.mdl";
+string FX_BIGFIRE	= "progs/fx_bfire.mdl";
+string FX_BLUEFIRE  = "progs/fx_fblue.mdl";
+string FX_FMAKER 	= "progs/fx_fm.mdl";
+string FX_FLMAKER = "progs/fx_fmlit.mdl";
+string FX_WFALL 	= "progs/fx_wfall.mdl";
+string FX_FFIRE 	= "progs/fx_ffire.mdl";
+string FX_FFLUX	= "progs/fx_fflux.mdl";
+string FX_SMOKE	= "progs/fx_smke.mdl";
+string FX_SMOKE2	= "progs/fx_smke2.mdl";
+string FX_GIB		= "progs/fx_sgib.mdl";
+string FX_VORE	= "progs/fx_vores.mdl";
+string FX_WIZ		= "progs/fx_wiz.mdl";
+*/
+
+
+/*
+ * STAT collection 
+ * 
+ */
+
+float STAT_EDITS 		= 0;
+float STAT_ACTIVE 	= 1;
+float STAT_MODELS 	= 2;
+float STAT_SOLID 		= 3;
+float STAT_STEP 		= 4;
+
+/*
+ * File handling 
+ *
+ */
+
+float FILE_WRITE 			= 2;
+float FILE_APPEND 		= 1;
+float FILE_READ			= 0;
+
+/*
+ * TomazQuake Standar file handling
+ * (TQS)
+ */
+
+void (float handle) 			close	= #87;
+float (string file, float mode)		open 	= #86; // 0 read 1 append , 3 def write
+
+string (float handle) 			read 	= #88;
+void ( float handle , string print) 	write 	= #89;
+
+
+/*
+ * TQS strings
+ * 
+ */
+
+string(string s1, string s2) 		strcat 	= #82;
+float ( string fstring) 			stof 	= #84;
+vector ( string vecstring) 		stov 	= #85;
+string (string src, float from, float len) 	substring 	= #83;
+float (string str) 			strlen = #81;
+
+float (string mys) 			zone 	= #79 ;
+void (float pmys) 				unzone = #80 ;
+
+/*
+ * Telejano Builtins
+ * TJ
+ */
+
+
+float (float type_of_STAT )  		statcount 	= #91; // stats counter
+//float (string str, string key )	kytest		= #92; // ALPHA!
+//vector (string str, string format )	sscanf 	= #93; // ALPHA!
+vector () 					rvector	= #90; // random vector
+string (string s) 				hvstring 	= #94; // inverse message
+
+string (string cvar) 			cvarstring 	= #97;	// Read string from cvar
+
+void (string slot, string picfile, float x, float y, float org) 			ShowPic 	= #104; //Show pic to all players
+void (string slot, string picfile, float x, float y, float org, entity to) 	ShowPicEnt 	= #108; //Show pic to player
+void (string slot, entity to) 								HidePicEnt 	= #109; //Hide pic to player
+
+string (string file,string section, string key) ReadRegister = #112; // Read key from .ini file
+
+void ( float value) 			anglemod = #102; // builtin anglemod
+
+void ( entity for, entity to ) 		VisibleEnt 	= #100; // built-in visible
+void ( entity for) 				visible 	= #101; // built-in visible
+
+void (vector org, vector end, float type, float typelife, float dead, float fxscale, float key ) StaticFX =#113;
+	// Function that spawn particle events 
+
+//PR_TempEntity //ALFA
+//PR_LoadLexer //ALFA
+//PR_GetLexerDefinition //ALFA
+
+//.float autoanimagic;//BETA
+//.float autoanimagic_lowframe;//BETA
+
+/*
+ * Static FX (informative)
+ *
+ */
+
+/*
+
+// Type
+
+#define SFX_EXPLOFIRE	1
+#define SFX_FIRE		2
+#define SFX_SMOKE		3
+#define SFX_EXPLOWAVE	4
+#define SFX_ZRINGS		5
+#define SFX_LIGHT		6
+#define SFX_BLACKSNOKESRC 7
+
+// Typelife
+
+#define LF_FOREVER		1
+#define LF_WILLDIE		2
+#define LF_SCALE		3
+#define LF_SCALEFAST	4
+#define LF_ONLYONCE		5
+*/
+
+
+/* 
+ * LMPGUI Origins
+ * 
+ */
+
+
+float ORG_NW 	= 0;
+float ORG_NE 	= 1;
+float ORG_SW 	= 2;
+float ORG_SE 	= 3;
+float ORG_CC 	= 4;
+float ORG_CN 	= 5;
+float ORG_CS 	= 6;
+float ORG_CW 	= 7;
+float ORG_CE 	= 8;
+
+/*
+ *  GUI New Services:
+ */
+
+
+/*
+//Informative, use builtins instead.
+
+ float SVC_ITEMGUI 	= 41;	//  SHOWLMP hacked, +origins support
+ float SVC_ITEMGUIX  = 42; 	//  SHOWLMP hacked2, +counters, +labels, +alpha support
+*/
+
+/*
+ * Extra temporal events
+ * TQS/TJ
+ */
+
+float TE_EXPLOSION2 	= 12;
+float TE_BEAM		= 13;
+float TE_SNOW		= 14;
+float TE_RAIN		= 15;
+float TE_PLASMA		= 16;
+float TE_RAILTRAIL	= 17;
+
+float TE_CUSTOMFX	 	= 18;
+float TE_EXPLOSIONSMALL 		= 19;
+float TE_EXPLOSIONSMALL2	= 20;
+float TE_EXPLOSIONSMALL3	= 21;
+float TE_IMPLOSIONFX		= 50; // Strange teleport fog
+
+/*
+ * Extra backward compatible flags
+ * TJ
+ */
+
+
+float EF_DECAL  		= 16;  
+float EF_BLUEFIRE   	= 32;  
+float EF_FIRE		= 64;  
+float EF_DOWFIRE		= 128;  
+
+/* 
+ * Extra Backward no-compatible flags
+ * for .effects2
+ */
+
+float EF2_VOORTRAIL		= 1;
+float EF2_BIGFIRE 		= 2;
+float EF2_FOGSPLASH 	= 4;
+float EF2_WATERFALL 	= 8;
+float EF2_FOGSPLASHLITE 	= 16;
+float EF2_SPARKSHOWER 	= 32;
+float EF2_DARKFIELD	 	= 64;
+float EF2_ROTATEBIT	 	= 128;
+
+/* 
+ * Extra Backward no-compatible flags
+ * for .effects3
+ */
+
+float EF3_ROTATE1		= 1;
+float EF3_ROTATE2		= 2;
+float EF3_ROTATE0		= 3;
+float EF3_ROTATE012		= 4;
+float EF3_ROTATEZ		= 5;
+float EF3_AUTOSNOW		= 6;
+float EF3_TEMPUSVIVENDI	= 7;
+float EF3_TEMPUSFIRE	= 8;
+float EF3_TEMPUSSMOKE	= 9;
+float EF3_SHADOWSHIELD	= 10;
+float EF3_FLUXFIRE2		= 11;
+float EF3_ROTATEZ10		= 12;
+float EF3_ROTATEZ5		= 13;
+float EF3_MAGICFIRE		= 14;
+float EF3_DARKSMOKE		= 15;
+float EF3_DARKTRAIL		= 16;
+float EF3_DARKTRAIL2	= 17;
+float EF3_FLUXFIRESMALL	= 18;
+float EF3_CIRCLETRAIL	= 19;
+float EF3_NODRAW 		= 20; // Never draw
+float EF3_CLASSICDOWNFIRE 	= 21;
+float EF3_NONET		= 22; // For waypoins, data holding, etc...
+float EF3_AUTOVANISH	= 23; // Work!
+float EF3_EBEAM		= 24; 
+float EF3_HIPERTRANS	= 25;
+float EF3_HIPERTRANS2	= 26;
+float EF3_Q3AUTOGUN		= 27;
+float EF3_GRAYBITS 		= 28;
+//#define EF3_SPRBEAM			35
+float EF3_FOXFIRE		= 36; // Motor fire
+//#define EF3_EFIRE			37
+//#define EF3_ADDITIVE		38 //Additive rendering
+//#define EF3_CHEAPLENZ       48 // something similir to + lenz (will be better.. )
+//#define EF3_DPXFLARE		49 // something like dp lenz
+float EF3_DPXFLARENUKE = 50;
+//#define EF3_ISWEAPON		51 // Entity will show as weaponmodel
+
+
+/* Extra TQS atributtes 
+ * 
+ *
+ */
+
+.float	 scale;
+.float	 glow_size;
+.float	 glow_red;
+.float	 glow_green;
+.float	 glow_blue;
+.float	 drops;
+.float	 flakes;
+.float alpha;
+
+/* Extra movetypes
+ * TJ
+ *
+ */
+
+float MOVETYPE_FOLLOW		= 12; 
+//float MOVETYPE_MAGNETIC		= 13; //Beta
+//float MOVETYPE_MAGNETICFOLLOW 	= 14; //Alpha!
+float MOVETYPE_RELATIVESTATIC 	= 15; // Movetype follow without rotations
+//#define MOVETYPE_PREDATOR		16		// Tei experimental 
+//#define MOVETYPE_CHASECAM		17		// Tei experimental 
+
+
+/* - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x - x*/
+
+/*
+ * Handling QC functions for telejano-based mods.
+ *
+ */
+
+
+/* Fx ents */
+
+float FX_FIRE = 0 ;
+float FX_BLUE = 1 ;
+float FX_RED  = 2 ;
+float FX_SMOKE = 3 ;
+float FX_SPARK = 4 ;
+float FX_VORE = 5 ;
+float FX_WIZ = 6 ;
+float FX_GIB = 7 ;
+float FX_BOLT = 8 ;
+float FX_BIGFIRE = 9;
+float FX_SPARKSHOWER = 10;
+float FX_FIREBLUE = 11;
+float FX_FOGMAKER = 12;
+float FX_FOGMAKERLITE = 12;
+float FX_FOGENGINE = 13;
+float FX_ENGINE = 14;
+float FX_WATERFALL = 15;
+float FX_MAGIC = 16;
+float FX_AUTOSNOW = 17;
+float FX_TEMPUSVIVENDI = 18;
+float FX_TEMPUSFIRE = 19;
+float FX_TEMPUSSMOKE = 20;
+float FX_SHADOWSHIELD = 21;
+float FX_FLUXFIRE2 = 22; 
+float FX_MAGICFIRE = 23;
+float FX_DARKSMOKE = 24;
+float FX_DARKTRAIL = 25;
+float FX_DARKTRAIL2 = 26;
+float FX_FLUXFIRESMALL = 27;
+float FX_CIRCLETRAIL = 28;
+float FX_FLARE = 29;
+float FX_BIGFLARE = 30;
+float FX_FLAREFIRE = 30;
+float FX_FLAREMINI = 31;// equal as flare :(
+float FX_MUZ = 32;
+float FX_GRAYBITS = 33;
+float FX_GRAYBITS2 = 34;
+float FX_GRAYBITS3 = 35;
+
+
+/* Function that spawn Fx-Decals 
+ * spawn one, then attach with a MOVETYPE_FOLLOW
+ * to interesting thing. 
+ */
+
+entity (float fxt) SpawnFX =
+{
+	local entity ne;
+
+	ne = spawn();
+
+	setorigin(ne, self.origin);
+	setsize (ne, '-0.1 -0.1 -0.1', '0.1 0.1 0.1');
+
+	ne.solid = SOLID_NOT;
+	ne.effects = ne.effects | EF_DECAL;
+	ne.think = SUB_Remove;
+	ne.nextthink = time + 0.1;
+	ne.velocity = self.velocity;
+	ne.avelocity = '600 600 600';
+
+	ne.classname= "fxdecal";
+
+	if (fxt == FX_FIRE)
+		{
+			ne.glow_size = 30 ;
+			ne.glow_red = 255;
+			ne.glow_green = 0 ;
+			ne.glow_blue =  0;
+		setmodel (ne, "progs/flame2.mdl");
+		return ne;
+		}
+	if (fxt == FX_RED)
+		{
+			ne.glow_size = 30 ;
+			ne.glow_red = 255;
+			ne.glow_green = 0 ;
+			ne.glow_blue =  0;
+		setmodel (ne, "progs/bolt.mdl");
+		return ne;
+		}
+	if (fxt == FX_BLUE)
+		{
+			ne.glow_size = 30 ;
+			ne.glow_red = 0;
+			ne.glow_green = 0 ;
+			ne.glow_blue = 255;
+		setmodel (ne, "progs/bolt2.mdl");
+		return ne;
+		}
+	if (fxt == FX_SPARK)
+		{
+		setmodel (ne, "progs/fx_spark.mdl");
+		return ne;
+		}
+	if (fxt == FX_SMOKE)
+		{
+		setmodel (ne, "progs/fx_smke.mdl");
+		return ne;
+		}
+	if (fxt == FX_VORE)
+		{
+		setmodel (ne, "progs/fx_vore.mdl");
+		return ne;
+		}
+	if (fxt == FX_WIZ)
+		{
+		setmodel (ne, "progs/fx_wiz.mdl");
+		return ne;
+		}
+	if (fxt == FX_GIB)
+		{
+		setmodel (ne, "progs/fx_gibs.mdl");
+		return ne;
+		}
+	if (fxt == FX_BOLT)
+		{
+		setmodel (ne, "progs/fx_bolt.mdl");
+		return ne;
+		}
+	if (fxt == FX_BIGFIRE)
+		{
+		setmodel (ne, "progs/fx_bfire.mdl");
+		return ne;
+		}
+	if (fxt == FX_SPARKSHOWER)
+		{
+		setmodel (ne, "progs/fx_sprk2.mdl");
+		return ne;
+		}
+	if (fxt == FX_FIREBLUE){		
+		setmodel (ne, "progs/fx_fblue.mdl");
+		return ne;
+		}
+	if (fxt == FX_FOGMAKER){		
+		setmodel (ne, "progs/fx_fm.mdl");
+		return ne;
+		}
+	if (fxt == FX_FOGMAKERLITE){		
+		setmodel (ne, "progs/fx_fmlit.mdl");
+		return ne;
+		}
+	if (fxt == FX_FOGENGINE){		
+		setmodel (ne, "progs/fx_ffire.mdl");
+		return ne;
+		}
+	if (fxt == FX_ENGINE){		
+		setmodel (ne, "progs/fx_fflux.mdl");
+		return ne;
+		}
+	if (fxt == FX_WATERFALL){		
+		setmodel (ne, "progs/fx_wfall.mdl");
+		return ne;
+		}
+	if (fxt == FX_MAGIC){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_MAGICFIRE;
+		return ne;
+		}
+	if (fxt == FX_AUTOSNOW){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_AUTOSNOW;
+		return ne;
+		}
+	if (fxt == FX_TEMPUSVIVENDI){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_TEMPUSVIVENDI;
+		return ne;
+		}
+	if (fxt == FX_TEMPUSFIRE){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_TEMPUSFIRE;
+		return ne;
+		}
+	if (fxt == FX_TEMPUSSMOKE){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_TEMPUSSMOKE;
+		return ne;
+		}
+	if (fxt == FX_SHADOWSHIELD){		
+		setmodel (ne, "progs/fx_void.mdl");
+
+		ne.effects3 = EF3_SHADOWSHIELD;
+		return ne;
+		}
+	if (fxt == FX_FLUXFIRE2){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_FLUXFIRE2;
+		return ne;
+		}
+	if (fxt == FX_MAGICFIRE){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_MAGICFIRE;
+		return ne;
+		}
+	if (fxt == FX_DARKSMOKE){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_DARKSMOKE;
+		return ne;
+		}
+	if (fxt == FX_DARKTRAIL){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_DARKTRAIL;
+		return ne;
+		}
+	if (fxt == FX_DARKTRAIL2){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_DARKTRAIL2;
+		return ne;
+		}
+
+	if (fxt == FX_FLUXFIRESMALL){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_FLUXFIRESMALL;
+		return ne;
+		}
+	if (fxt == FX_CIRCLETRAIL){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_CIRCLETRAIL;
+		return ne;
+		}
+	if (fxt == FX_FLARE){		
+		setmodel (ne, "progs/flare.spr");
+		//ne.effects3 = EF3_FLUXFIRESMALL;
+
+		ne.glow_size 		= 40 ;
+		ne.glow_red 		= 255;
+		ne.glow_green 	= 255;
+		ne.glow_blue 		= 255;
+		return ne;
+		}
+	if (fxt == FX_BIGFLARE){		
+		//setmodel (ne, "progs/bigflare.spr");
+		setmodel (ne, "progs/flare.spr");//TJ-SDK
+		//ne.effects3 = EF3_CIRCLETRAIL;
+		return ne;
+		}
+	if (fxt == FX_FLAREFIRE){		
+		//FIXME: NOT WORK?????
+		setmodel (ne, "progs/flare.spr");
+		ne.effects3 = EF3_FLUXFIRESMALL;
+		ne.glow_size 		= 90;
+		ne.glow_red 		= 250;
+		ne.glow_green 	= 250;
+		ne.glow_blue 		= 250;
+		return ne;
+	}
+	if (fxt == FX_MUZ){		
+		if (random()<0.9) 
+		{
+			setmodel (ne, "progs/muz.spr");
+		}
+		else
+			setmodel (ne, "progs/muz2.spr");
+
+		if (random()<0.1)
+				ne.skin = 1;
+		else
+				ne.skin = 0;
+
+		ne.alpha = random() * 0.7;
+
+		ne.movetype = MOVETYPE_NONE;
+		ne.think = SUB_Remove;
+		ne.nextthink = time + 0.1;
+		ne.velocity = '0 0 0';
+		return ne;
+	}
+
+	if (fxt == FX_GRAYBITS){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = EF3_GRAYBITS;
+		return ne;
+		}
+	if (fxt == FX_GRAYBITS2){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = 33;
+		return ne;
+		}
+	if (fxt == FX_GRAYBITS3){		
+		setmodel (ne, "progs/fx_void.mdl");
+		ne.effects3 = 34;
+		return ne;
+		}
+	return ne;
+};
+
+
+void () PrecacheEngine =
+{
+
+	//These files will be generated on the fly by the engine,
+	// not need of real files.
+
+	precache_model("progs/flame.mdl");
+	precache_model("progs/flame2.mdl");
+	precache_model("progs/fx_alien.mdl");
+	precache_model("progs/fx_bfire.mdl");
+	precache_model("progs/fx_fblue.mdl");
+	precache_model("progs/fx_ffire.mdl");
+	precache_model("progs/fx_fflux.mdl");
+	precache_model("progs/fx_fm.mdl");
+	precache_model("progs/fx_fmlit.mdl");
+	precache_model("progs/fx_sgib.mdl");
+	precache_model("progs/fx_smke.mdl");
+	precache_model("progs/fx_smke2.mdl");
+	precache_model("progs/fx_spark.mdl");
+	precache_model("progs/fx_sprks.mdl");
+	precache_model("progs/fx_void.mdl");
+	precache_model("progs/fx_vores.mdl");
+	precache_model("progs/fx_wfall.mdl");
+	precache_model("progs/fx_wiz.mdl");
+};
+
+
+
+
+

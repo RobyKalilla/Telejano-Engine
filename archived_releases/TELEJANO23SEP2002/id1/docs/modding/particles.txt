@@ -1,0 +1,191 @@
+////////////////////////////////////////////////////
+//
+//   PARTICLE TEXTURE NAMES
+//
+
+Files located at <yourmod>/<themefolder>/particles
+Examples:
+  id1/textures/particles
+ qupa/textures/particles
+ qupa/forest/particles
+
+default themefolder is  "textures"
+default mod is "id1"
+
+About the filenames:
+stuff*
+ can be
+ stuff.lmp
+ stuff.pcx
+ stuff.tga
+
+I suggest .tga for the best effect.
+  
+
+//
+/////
+//
+
+particle*
+  general use particle. round.
+
+fglow*
+  glow frow light sources (torch, etc..)
+
+smoke1*
+smoke2*
+smoke3*
+smoke4*
+ standard smoke cycle
+
+bubble*
+  bubble texture
+
+snow*
+snow1*
+snow2*
+ for snow fx
+
+rain_tex*
+ unused, use particle instead
+
+fire*  or flama* 
+ fire no-cycled.
+
+fcyle0*
+fcyle1*
+fcyle2*
+fcyle3*
+fcyle4*
+fcyle5*
+ fire cycle
+
+flare*
+ flare fx for teleport and others
+
+bolt*
+ bolt
+
+money*
+ euro/dolar sign
+
+flama*
+ static fire 
+
+circle*
+ circle
+
+focus* 
+ focus 
+
+zing1*
+zing2*
+zing3*
+zing4*
+ electric zing cicle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int		smoke1_tex;
+int		smoke2_tex;
+int		smoke3_tex;
+int		smoke4_tex;
+int		blood_tex;
+int		bubble_tex;
+int		snow_tex;
+int		snow1_tex;
+int		snow2_tex;//Tei venomus snow
+
+//Tei builtinsmoke
+int     b_smoke1_tex;
+int     b_smoke2_tex;
+int     b_smoke3_tex;
+int     b_smoke4_tex;
+//Tei builtinsmoke
+
+
+int		rain_tex;
+
+// Tei new particles hardcoded
+
+int		flareglow_tex;
+int		fire_tex;
+int		firecycle_tex[6];
+int		flare_tex;
+int		money_tex;
+int		flama_tex;
+int		circle_tex;
+int		focus_tex;
+
+int		bolt_tex;
+// Tei new particles hardcoded
+
+//Tei externalized tex
+int zing1_tex;
+int zing2_tex;
+int zing3_tex;
+int zing4_tex;
+//Tei externalized tex
+
+//Tei force internal particle
+
+int builtin_particle_tex;
+
+//Tei force internal particle
+
+
+particle_t	*active_particles, *free_particles, *particles;
+
+int		r_numparticles;
+
+vec3_t	r_pright, r_pup, r_ppn;
+
+extern byte	particle[32][32];
+extern byte	smoke1[32][32];
+extern byte	smoke2[32][32];
+extern byte	smoke3[32][32];
+extern byte	smoke4[32][32];
+extern byte	blood[32][32];
+extern byte	bubble[32][32];
+extern byte	snow[32][32];
+extern byte	rain[32][32];
+
+// Tei new particles hardcoded
+extern byte	fire[32][32];
+extern byte	flare[32][32];
+extern byte	money[32][32];
+extern byte	flama[32][32];
+extern byte	circle[32][32];
+extern byte focus[32][32];
+// Tei new particles hardcoded

@@ -1,0 +1,57 @@
+menu_mode 1
+menu_clear
+
+
+
+alias updaterain "combobox menu_1 OFF_Auto_Rain!ON__Auto_Rain r_autorain"
+updaterain
+
+alias updatesnow "combobox menu_2 OFF_Auto_Snow!ON__Auto_Snow r_autosnow"
+updatesnow
+
+alias updatelava "combobox menu_3 OFF_Auto_Lava!ON__Auto_Lava r_autolava"
+updatelava
+
+alias updateday "combobox menu_4 OFF_Auto_Light!ON__Auto_Light r_autolightday"
+updateday
+
+alias updatefog "combobox menu_5 OFF_Auto_Fog_Water!ON__Auto_Fog_Water r_autofogwater"
+updatefog
+
+alias updatezing "combobox menu_6 OFF_Auto_Zing!ON__Auto_Zing r_autozing"
+updatezing
+
+alias updatebubles "combobox menu_7 OFF_Auto_Bubbles!ON__Auto_Bubbles r_autobubbles"
+updatebubles
+
+
+
+menu_0 "Toggle WFX-effects"
+
+xmenu_1 "toggle r_autorain;updaterain"
+xmenu_2 "toggle r_autosnow;updatesnow"
+xmenu_3 "toggle r_autolava;updatelava"
+xmenu_4 "toggle r_autolightday;updateday"
+xmenu_5 "toggle r_autofogwater;updatefog"
+xmenu_6 "toggle r_autozing;updatezing"
+xmenu_7 "toggle r_autobubbles;updatebubles"
+
+menu_8 "Main Menu"
+xmenu_8 "exec main.menu.txt"
+
+menu_9 "Close Menu"
+xmenu_9 "menu_mode 0; bind enter execmenu"
+
+menu_select 1
+menu_items 9
+
+bind [ menu_up
+bind ] menu_down
+bind enter menu_exec
+
+alias execmenu "exec main.menu.txt"
+
+
+
+
+

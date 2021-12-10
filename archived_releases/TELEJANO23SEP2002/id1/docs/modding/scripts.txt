@@ -1,0 +1,132 @@
+
+I need to finish this stuff and write proper docs. Some keys need parameters, and someothers dont need.
+Place your mscript file at scripts/models.txt and your rscript file at scripts/textures.txt.
+
+a mscript file look similar to that:
+
+
+progs/pyrespike.mdl
+{
+	corona 100
+	use_LASER
+	use_DOWFIRE
+}
+
+I am coding this stuff to make easy to play with.
+
+ - - - 
+
+typedef struct
+{
+	char				scriptname[56];
+	char				texname[56];
+	int					texnum;
+	float				texscale;
+	BOOL				texexist;
+	BOOL				useturb;
+	BOOL				usescroll;
+	BOOL				usevturb;
+	BOOL				useanim;
+//Tei more shaders
+	BOOL				usegrass;
+	char				grassname[255];
+	float				grassdensity;
+	model_t	*			grassmodel;
+//Tei more shaders
+
+//Tei detail from rscript
+	BOOL				usedetail;
+	char				detailname[255];
+	int					mydetail;
+	float				mydetailscale;
+//Tei detail from rscript
+
+//Tei smoke rscript
+	BOOL				usesmoke;
+	int					smokeheight;
+	float				smokescale;
+//Tei smoke rscript
+
+//Tei
+	BOOL				usewater;
+	BOOL				usesnow;
+	BOOL				uselight;
+	BOOL				userain;
+	BOOL				usezing;
+			BOOL flava;
+			BOOL flight;
+			BOOL fnodraw;
+			BOOL frain;
+			BOOL fsnow;
+			BOOL ftele;
+			BOOL fullbrights;
+			BOOL fwater;
+			BOOL islava;
+			BOOL issky;
+			BOOL istele;
+			BOOL iswater;
+			BOOL wfx_red;
+			BOOL wfx_green;
+			BOOL wfx_blue;
+			BOOL nodraw;
+//Tei
+	rturb_t				turb;
+	rturb_t				vturb;
+	rscroll_t			scroll;
+	rflags_t			flags;
+	ranim_t				anim;
+	int					nextstage;
+	char				nextname[56];
+} rscript_t;
+
+
+//Tei mscript
+
+typedef struct
+{
+	char				scriptname[56];
+	char				modelname[56];
+	model_t	*			model;
+
+//corona
+	BOOL				usecorona;
+
+//mfx
+			BOOL use_FIRE;
+			BOOL use_FIRE2;
+			BOOL use_MISSILE;
+			BOOL use_FIRELAMP;
+			BOOL use_BLUEFIRE2;
+			BOOL use_BLUEFIRE;
+			BOOL use_DOWFIRE;
+			BOOL use_ENGINEFIRE2;
+			BOOL use_BIGFIRE;
+			BOOL use_FOGMAKER;
+			BOOL use_FOGMAKERLITE;
+			BOOL use_WATERFALL;
+			BOOL use_SPARKSHOWER;
+			BOOL use_ALIENBLOOD;
+			BOOL use_BOLTFX;
+			BOOL use_SUN;
+			BOOL use_LASER;		
+			BOOL use_SPIKE;
+			BOOL use_GLOW;
+			BOOL use_LUX;
+			BOOL use_GIB;
+			BOOL use_GRASS;
+			BOOL use_LUX2;		
+			BOOL use_LASERBEAM;
+
+			BOOL	flags;
+			BOOL	fullbright;
+			vec3_t	glow_color;
+			int	glow_radius;
+			BOOL	noshadow;
+
+	float				coronaalpha;
+	int					coronasize;
+
+	ranim_t				anim;
+	int					nextstage;
+	char				nextname[56];
+} mscript_t;

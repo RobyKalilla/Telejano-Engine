@@ -1,0 +1,51 @@
+
+Read telejano.html for more info about the engine
+
+) matrix_effect
+
+activate a matrix style animation. Designed for help modders to look the player model actually is a cool feature to trig in middel of a combat. The rendering is not adapted yet to support this feature and background become dark somethimes (but is a good side effect)
+
+
+) sound_eco, sound_ecovol
+
+generate eco sounds with ecovol volume
+
+
+) r_heartbeat
+
+activate heart beat sound effect
+
+) chase_active 2
+
+view from zenit with chase_angle angle
+
+) chase_active 3
+
+chase view with info_intermission detection for auxiliar cam
+
+
+) setcrono
+
+set step, command, times to exec the command
+
+) env_  
+
+experimental.
+
+
+) capture_dir
+
+support capture screenshot_tga in other dir or disk
+
+) wait 
+
+support a number of delays to avoid the need for long wait alias groups 
+
+
+) r_beamadjust
+
+0 - normal quake (no visual fix)
+1 - relaxed fix (visual fix x/y)
+2 - full fix (visual fix x/y/z)
+
+

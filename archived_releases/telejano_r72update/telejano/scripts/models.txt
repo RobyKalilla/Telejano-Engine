@@ -1,0 +1,34 @@
+progs/coronalight.mdl
+{
+	corona 100
+}
+
+progs/grenade.mdl
+{
+	flags 2
+	use_GRENADE
+}
+
+progs/missile.mdl
+{
+	flags 1
+	use_MISSILE
+}
+
+progs/laser.mdl
+{
+	effects 0 0 27
+	use_LASER
+}
+
+progs/lasrspik.mdl
+{
+	effects 0 0 27
+	use_LASER
+}
+
+progs/lspike.mdl
+{
+	effects 0 0 27
+	use_FIRELAMP
+}

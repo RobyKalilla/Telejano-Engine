@@ -1,0 +1,66 @@
+
+// Init
+
+
+menu_mode 1
+menu_clear
+
+// Setup
+
+set fogredlabel 	" Fog Red"
+set foggreenlabel 	" Fog Green"
+set fogbluelabel 	" Fog Blue"
+
+// Alias
+
+alias updatefogred   "bound gl_fogred 0 1;   slider menu_1 gl_fogred 1;   concat menu_1 fogredlabel"
+alias updatefoggreen "bound gl_foggreen 0 1; slider menu_2 gl_foggreen 1; concat menu_2 foggreenlabel"
+alias updatefogblue  "bound gl_fogblue 0 1;  slider menu_3 gl_fogblue 1;  concat menu_3 fogbluelabel"
+
+alias lessfogred   "add gl_fogred -0.1;   updatefog"
+alias morefogred   "add gl_fogred 0.1;    updatefog"
+
+alias lessfoggreen "add gl_foggreen -0.1; updatefog"
+alias morefoggreen "add gl_foggreen 0.1;  updatefog"
+
+alias lessfogblue  "add gl_fogblue -0.1;  updatefog"
+alias morefogblue  "add gl_fogblue 0.1;   updatefog"
+
+alias normalmode "bind [ menu_up; bind ] menu_down; bind enter menu_exec"
+
+alias updatefog "updatefogred; updatefoggreen; updatefogblue"
+
+alias bind_fogred 	"bind [ lessfogred;   bind ] morefogred;   bind enter normalmode"
+alias bind_foggreen 	"bind [ lessfoggreen; bind ] morefoggreen; bind enter normalmode"
+alias bind_fogblue 	"bind [ lessfogblue;  bind ] morefogblue;  bind enter normalmode"
+
+// Data
+
+menu_0 "Fog Setup"
+
+xmenu_1 "bind_fogred"
+xmenu_2 "bind_foggreen"
+xmenu_3 "bind_fogblue"
+
+menu_4 "Main Menu"
+xmenu_4 "exec main.menu.txt"
+
+menu_5 "Close Menu"
+xmenu_5 "closemenu"
+
+menu_6 "(press enter to setup)"
+
+
+menu_select 1
+menu_items 5
+
+alias execmenu "exec main.menu.txt"
+alias closemenu "menu_mode 0;bind enter execmenu"
+
+//Final Updates
+
+normalmode
+
+updatefogred
+updatefoggreen
+updatefogblue

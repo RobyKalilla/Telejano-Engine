@@ -1,0 +1,29 @@
+menu_mode 1
+menu_clear
+
+menu_0 "Control FrikBots"
+
+menu_1 " Spawn a Bot"
+xmenu_1 "impulse 100"
+
+menu_2 " Remove a Bot"
+xmenu_2 "impulse 102"
+
+menu_3 " Chase Cam"
+xmenu_3 "toggle chase_active"
+
+menu_4 "Main Menu"
+xmenu_4 "exec main.menu.txt"
+
+menu_5 "Close Menu"
+xmenu_5 "closemenu"
+
+menu_select 1
+menu_items 5
+
+bind [ menu_up
+bind ] menu_down
+bind enter menu_exec
+
+alias execmenu "exec main.menu.txt"
+alias closemenu "menu_mode 0;bind enter execmenu"

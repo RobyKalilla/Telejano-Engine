@@ -1,0 +1,29 @@
+// MODDING & MAPPING
+
+// mod_progs
+
+You can have more than a progs.dat file for a map or mod.
+mod_progs  store the name of the next progs.dat file loaded if the game is restarted.
+
+// gl_decalfolder
+
+decal folder subst strategy:
+*name.mdl  renamed to <gl_decalfolder content>/name.mdl
+
+// gl_themefolder
+
+texture substitution set is loaded from gl_themfolder folder
+
+// autoload (no cvar)
+
+cfg file automatically loaded from maps/cfg/<mapname>.cfg
+Suggested use:  set fog, zone fog, and r_auto  enviromentals.
+
+
+This engine support all from TomazQuake engine. 
+
+More Info:
+telejeano.berlios.de
+
+
+

@@ -1,0 +1,32 @@
+menu_mode 1
+menu_clear
+
+menu_0 "Control Video Config"
+
+set onoff "not!yes"
+set geolabel " GeoCaustics"
+set detlabel " Detail"
+
+alias updategeo	"combobox menu_1 onoff gl_geocaustics;concat menu_1 geolabel"
+alias updatedet	"combobox menu_2 onoff gl_detail;concat menu_2 detlabel"
+
+xmenu_1 "toggle gl_geocaustics;updategeo"
+xmenu_2 "toggle gl_detail;updatedet"
+
+menu_3 "Main Menu"
+xmenu_3 "exec main.menu.txt"
+
+menu_4 "Close Menu"
+xmenu_4 "closemenu"
+
+menu_select 1
+menu_items 4
+
+updategeo;updatedet;
+
+bind [ menu_up
+bind ] menu_down
+bind enter menu_exec
+
+alias execmenu "exec main.menu.txt"
+alias closemenu "menu_mode 0;bind enter execmenu"

@@ -1,0 +1,9 @@
+
+progs/coronalight.mdl
+{
+	corona 100
+}
+
+
+
+

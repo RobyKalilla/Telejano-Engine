@@ -1,0 +1,82 @@
+Oki... here is the third little brief tutorial on how to mod using TomazQuake engine...
+
+Moding 1.46
+
+Well first of i guess is how to use TGA's on all the different things in the game. I havent tried every little possible way of doing it so i would appreciate some feedback on how it works.
+
+##########
+Md2 Models
+##########
+
+Works the same as with an mdl.
+
+################
+TGA's on sprites
+################
+
+This one is easy. Just add an tga with the same name as the sprite and with an _"number of frame" to the end of it. As example. Id's original explosion sprite is in id1/progs and is called "s_explod.spr". It has 6 frames. Then the TGA's would be "s_explod_0.tga", "s_explod_1.tga" and so on. And the TGA's goes in the same folder as the sprite is.
+
+###############
+TGA's on models
+###############
+
+Same as with sprites but instead of the frame number u add the skin number. So like "invisibl.mdl" which is the invisibility ring. It only has 1 skin so the TGA would be "invisibl_0.tga".
+
+###############
+All other TGA's
+###############
+
+All other TGA's as menu graphics and conbacks and conchars all goes in the gfx folder.
+
+One thing that works for all these TGA functions is that the TGA can be any size. If its to small it is stretched to fit the original LMP size. And if its to big then it is shrunk to fit.
+
+Another thing is that all these talk about TGA's also work with PCX's.
+
+A third thing is in order to get translucency in the TGA's u have to add an "alpha channel". I mainly use Photoshop for that cos its real simple to do with it. But if u have any other prog and need help im sure we can solve it.
+
+############
+Moding Stuff
+############
+
+u can put:
+.float alpha, scale, glow_size, glow_red, glow_green, glow_blue;
+
+at the bottom of your defs.qc in order to use self.**** to use this new stuff.
+
+.alpha 0-1 sets the translucency of any model. 1 = Solid 0. = Invisible.
+.scale 0-4 sets the scale of any model. 0 = so small u cant see it. 4 = 4 times as big as original.
+.glow_size 0-250 spawns a dynamic light around the model and set the size of it (duh).
+.glow_red 0-1, .glow_green 0-1 and glow_blue 0-1 set the color of the dynamic light.
+
+3 BIG IMPORTANT NOTES
+
+U can NOT use alpha = 0 and scale = 0. u must use 0.01 or something. Cos if u use 0 it defaults to 1. This is due to a bug that othervise would make all models that doesnt have .scale or .alpha to get the value 0. Which means that u would have to give ALL modells a value. So dont use 0 but use 0.01. And dont do like
+
+if (scale < 0)
+	remove self;
+
+but use 
+
+if (scale < 0.01)
+	remove self;
+
+or something like that.. othervise the model will flash just before it gets removed.
+
+Second thing is that if u use FrikBots in your mods. Then u need to change a variable in the frikbot code from scale to scal 2. othervise it will interfer with my scale code. And its easier to just change that value in the frikbot code then for me to redo the whole .alpha .scale system.
+
+All this can apply to brush entities to such as func_wall's func_door's and so on. To make glass or ice or whatever u wanna do.
+
+######
+Slowmo
+######
+
+With stuffcmd'ing the cvar slowmo u can alter the game speed... 1 is normal. 2 is double speed and 0.5 is half speed... 0.1 is SLOW-MOTION ;)
+
+And sorry for my BAD english....
+
+If there is something u dont understand or that i have explained badly then u r very welcome to mail me... And if u just want to give ideas or have any questions at all then of course u r welcome to mail me then to ;)
+
+Tomas "Tomaz" Jakobsson
+
+tompsson@hotmail.com
+tomaz.quakesrc.org

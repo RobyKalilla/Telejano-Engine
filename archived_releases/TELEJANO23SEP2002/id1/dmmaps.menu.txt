@@ -1,0 +1,38 @@
+menu_mode 1
+menu_clear
+
+menu_0 "Select DM Map"
+
+menu_1 " Place of Two Deaths"
+xmenu_1 "closemenu;map dm1"
+
+menu_2 " Claustrophobopolis"
+xmenu_2 "closemenu;map dm2"
+
+menu_3 " The Abandoned Base"
+xmenu_3 "closemenu;map dm3"
+
+menu_4 " The Bad Place"
+xmenu_4 "closemenu;map dm4"
+
+menu_5 " The Cister"
+xmenu_5 "closemenu;map dm5"
+
+menu_6 " The Dark Zone"
+xmenu_6 "closemenu;map dm6"
+
+menu_7 "Main Menu"
+xmenu_7 "exec main.menu.txt"
+
+menu_8 "Close Menu"
+xmenu_8 "closemenu;map dm6"
+
+menu_select 1
+menu_items 8
+
+bind [ menu_up
+bind ] menu_down
+bind enter menu_exec
+
+alias execmenu "exec main.menu.txt"
+alias closemenu "menu_mode 0;bind enter execmenu"

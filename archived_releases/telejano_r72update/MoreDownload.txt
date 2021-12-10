@@ -1,0 +1,42 @@
+////////////////////////////////
+//
+// Suggested downloads:
+//
+///////////////////////////////
+
+
+***  TEXTURES *** 
+
+
+http://www.quake.cz/winclan/qe1/
+http://telejano.berlios.de/option/modelpack1.zip
+http://www.fuhquake.net/ (section forums)
+
+Installation:
+
+ Unzip in the appropiate folder. Example:
+
+ /quake/texturepack/textures/<here all the tga, png,etc... files>
+
+*** MODELS ***
+
+http://xferoc2.fileplanet.com/planetquake/quakeremodeled/deathmatch_models.zip?clientid=0
+Referencia http://xferoc2.fileplanet.com/planetquake/quakeremodeled/ammobox_models.zip?clientid=0
+
+Installation:
+ Unpack. Move files from the Override folder to his parent folder.
+
+ /quake/modelpack/progs/<all the mdl, tga, png, etc files here>
+
+
+*** GAME LAUNCHER ***
+
+http://www.forbiddencolours.com/T-Menu
+
+
+*** LOCALMENUS ***
+
+http://telejano.berlios.de/option/JOLocalMenus2pak.zip
+
+
+

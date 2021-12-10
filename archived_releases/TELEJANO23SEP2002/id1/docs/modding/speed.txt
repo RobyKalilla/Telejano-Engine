@@ -1,0 +1,11 @@
+if you want speed, try:
+
+0) disable shadows (r_shadows)
+1) disabling gl_detail and gl_geocaustic
+3) disable dinamic light, etc,..
+4) disable static particle effect,... (static_fx)
+5) increase gl_particle_limiter
+6) disable v_refresh limit in your card config
+7) decrement extra_fx cvar
+
+Anyway this engine is not designed for pure speed.

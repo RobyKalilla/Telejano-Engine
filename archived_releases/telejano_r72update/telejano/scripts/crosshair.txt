@@ -1,0 +1,109 @@
+0
+{
+	file	textures/crosshairs/crosshair1
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+1
+{
+	file	textures/crosshairs/crosshair2
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+2
+{
+	file	textures/crosshairs/crosshair3
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+3
+{
+	file	textures/crosshairs/crosshair4
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+4
+{
+	file	textures/crosshairs/crosshair5
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+5
+{
+	file	textures/crosshairs/crosshair6
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+6
+{
+	file	textures/crosshairs/crosshair7
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+7
+{
+	file	textures/crosshairs/crosshair8
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+8
+{
+	file	textures/crosshairs/crosshair9
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}
+
+9
+{
+	file	textures/crosshairs/crosshair10
+	set	alpha	1
+	set	xsize	32
+	set	ysize	32
+	set	red	1
+	set	green	1
+	set	blue	1
+}

@@ -1,0 +1,31 @@
+menu_mode 1
+menu_clear
+
+menu_0 "Control Modes Config"
+
+set raybox "Normal Ray!Light RayBlast"
+set extrabox "No ExtraFX!More FX!High FX Level!HardCoreFX!UltraHardCore FX!Mad FX!InsaneMad FX"
+
+alias updateray "combobox menu_1 raybox gl_xrayblast"
+alias updateextra "combobox menu_2 extrabox extra_fx"
+
+xmenu_1 "toggle gl_xrayblast;updateray"
+xmenu_2 "toggle extra_fx 6;updateextra"
+
+menu_3 "Main Menu"
+xmenu_3 "exec main.menu.txt"
+
+menu_4 "Close Menu"
+xmenu_4 "closemenu"
+
+menu_select 1
+menu_items 4
+
+updateray;updatedet;
+
+bind [ menu_up
+bind ] menu_down
+bind enter menu_exec
+
+alias execmenu "exec main.menu.txt"
+alias closemenu "menu_mode 0;bind enter execmenu"

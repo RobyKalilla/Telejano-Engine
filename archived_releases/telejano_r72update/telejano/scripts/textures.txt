@@ -1,0 +1,9 @@
+envmap
+{
+	set envmap 1
+}
+
+sand101
+{
+	grass progs/palm1.md2 0.9
+}

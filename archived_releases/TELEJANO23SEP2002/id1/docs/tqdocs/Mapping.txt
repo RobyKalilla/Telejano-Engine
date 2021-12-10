@@ -1,0 +1,65 @@
+Oki... here is the third little brief tutorial on how to map using TomazQuake engine...
+
+Mapping 1.46
+
+###########
+Q2 skyboxes
+###########
+
+Simply add a "sky" tag to the worldspawn field. In my map at the top it looks like this: (when viewed in a text editer.. such as wordpad)
+
+"classname" "worldspawn"
+"sky" "city1"
+"wad" "textures.wad"
+
+This loads the city1 skybox and all 6 files should be in id1/gfx/env. The pics should be named like this for the city1 skybox.
+
+city1bk.tga	back
+city1dn.tga	down
+city1ft.tga	front
+city1lf.tga	left
+city1rt.tga	right
+city1up.tga	up
+
+U can also use LoadSky from the console to load different skys.
+
+##############
+Colored Lights
+##############
+
+This is one of the nicest things i ever seen... (and i dont mean that MY version is the nicest but colored lights overall) To make colored light u just have to put a "_color" "? ? ?" on your light entities... Then just calculate the light with LordHavoc's hlight.exe or my TomLite.exe (further instructions on how to use TomLite comes with the prog itself) which produces a lit file (lit files are small files that contains the colored information of a map). By using lit files the map can be played on engines that doesnt support lit or doesnt even support colored lights.. dosquake for example. But then the map will have ordinary light :). The lighting method is the same as on the original tools... Except u add 0-255 for the colors... and u have to lit the map twice... first without the -colored tag in order to calculate the light offset tables in the BSP... then with the -colored tag to calculate the .lit file....
+
+############
+TGA Textures
+############
+
+This is the simplest thing of it all :) Just make a folder called textures in the id1 folder if it isnt already there. Then if u have a texture called wall01_1 in your map. Then just make a tga named wall01_1.tga and put it in the texture folder and it will use the tga on the map instead of the built in texture. Note that u doesnt use the tga when u map. u have to have a wad as usuall when u map.
+
+#############
+Alpha Brushes	(Requires Tomaz Mod or the code from it)
+#############
+
+Simply make a brush and make it an func_wall entity. Then add a "alpha" value to the entity.
+0.01 being translucent and 1 being solid. 0.5 will then logically be 50% translucent.
+Dont use the value 0 since it then will be 100% soild.
+
+#########
+Lightning	(Requires Tomaz Mod or the code from it)
+#########
+
+Simply make a brush and make it an func_lightning entity. Then the lightning will strike down to ground from somewhere inside that brush randomly.
+
+#############
+Rain and snow	(Requires Tomaz Mod or the code from it)
+#############
+
+This is like the Lightning.... Just make a brush and make it an func_rain or func_snow. U can also add an drops value for the rain and an flakes value for the snow. The amount u set is the amount of drops and flakes it will spawn every 0.1 second... Default is 10 if the value is not set... To big values can cause the game to crash. The amount of drops and flakes u want is all up to how big the rain or snow brush is... a small brush requires lesser drops while a big brush requires more.
+
+And sorry for my BAD english....
+
+If there is something u dont understand or that i have explained badly then u r very welcome to mail me... And if u just want to give ideas or have any questions at all then of course u r welcome to mail me then to ;)
+
+Tomas "Tomaz" Jakobsson
+
+tompsson@hotmail.com
+tomaz.quakesrc.org

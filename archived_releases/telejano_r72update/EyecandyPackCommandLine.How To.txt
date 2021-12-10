@@ -1,0 +1,27 @@
+
+1) Download a Eyecandy Pack
+
+2) Unzip your EP in the quake folder, with appropiate folder (follow ep instructions)
+
+3) Run it with -data.
+
+
+Examples:
+
+
+telejano -data modelpack 
+telejano -data skinpack
+telejano -data texturepack 
+telajano -data modelpack -data skinpack -data texturepack 
+...
+
+You can mix eyecandy packs and mods:
+
+telajano -data modelpack -data skinpack -data texturepack -mod dmsp +map dmsp1
+
+This package include demo sets of eyecandy, not full eyecandy packages. You can download these full packages (big downloads!) from is own site. For textures you can visit the qe1 retexturing project:
+
+http://www.quake.cz/winclan/qe1/
+
+
+

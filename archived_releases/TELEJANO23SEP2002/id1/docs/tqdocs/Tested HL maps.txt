@@ -1,0 +1,91 @@
+Tested Maps	74
+
+MAP NAME	MAP STATE	NEEDED WAD FILES
+
+Counter Strike Maps
+
+as_highrise	Crashes		halflife.wad, liquids.wad, decals.wad, itsitaly.wad, cs_bdog.wad, cstrike.wad
+as_oilrig	Works		halflife.wad, liquids.wad, xeno.wad, tswad.wad
+as_tundra	Works		halflife.wad, cstrike.wad, as_tundra.wad, cs_dust.wad
+
+cs_5star	Works
+cs_747		Works
+cs_airborn	Works
+cs_airplane	Works
+cs_alley1	Works
+cs_arabstreets	Works
+cs_area_z4	Works
+cs_area6	Works
+cs_assault	Works
+cs_assault2k	Works
+cs_backalley	Works
+cs_bravo	Works
+cs_bunker	Works
+cs_city1	Crashes
+cs_cnynsiege	Works
+cs_compound	Works
+cs_delta_assaultWorks
+cs_estate	Works
+cs_italy	Works
+cs_mansion	Works
+cs_militia	Crashes
+cs_normandy	Works		halflife.wad, decals.wad
+cs_office	Works
+cs_omaha_beach	Works
+cs_ranch	Works
+cs_siege	Works
+cs_thunder	Works but not all textures
+cs_urbanvilla
+
+de_aztec	Works
+de_bahrain	Works
+de_cbble	Works but not all textures
+de_dust		Works
+de_dust2	Works
+de_foption	Crashes
+de_inferno
+de_nuke
+de_prodigy
+de_rotterdam
+de_train	Works		halflife.wad, cs_bdog.wad
+de_vegas
+de_vertigo
+
+Half-Life DeathMatch Maps
+
+boot_camp	Works		halflife.wad, liquids.wad, decals.wad
+bounce		Works		halflife.wad
+crossfire	Instant Death	halflife.wad
+datacore	Works		halflife.wad, liquids.wad, decals.wad, xeno.wad
+frenzy		Works		halflife.wad, liquids.wad, decals.wad
+lambda_bunker	Works		halflife.wad, liquids.wad, decals.wad, xeno.wad
+rapidcore	Works
+snark_pit	Works		halflife.wad, liquids.wad, decals.wad, xeno.wad
+stalkyard	Works		halflife.wad, decals.wad
+subtransit	Works
+undertow	Works		halflife.wad, liquids.wad, decals.wad, xeno.wad
+
+Team Fortress Classic Maps
+
+2fort		Works		halflife.wad, liquids.wad, tfc.wad
+avanti		Works
+badlands	Works		halflife.wad, liquids.wad, tfc.wad
+casbah		Works		halflife.wad, liquids.wad, tfc.wad. tfc2.wad
+crossover2	Works		halflife.wad, liquids.wad, tfc.wad, decals.wad
+cz2		Works
+dustbowl	Works
+epicenter	Works		halflife.wad, liquids.wad, tfc.wad
+flagrun		PF_precache_model: overflow
+hunted		Works
+push		Works
+rock2		Crashes
+warpath		Mod_forname: null name
+well		Works		halflife.wad, liquids.wad, tfc.wad
+
+DeatMatch Classic
+
+dmc_dm2		Works		halflife.wad, liquids.wad, xeno.wad, dmc.wad
+dmc_dm3		Works		halflife.wad, liquids.wad, xeno.wad, dmc.wad
+dmc_dm4		Works		halflife.wad, liquids.wad, xeno.wad, dmc.wad
+dmc_dm6		Works		halflife.wad, liquids.wad, xeno.wad, dmc.wad
+dmc_e1m2	Works		halflife.wad, liquids.wad, xeno.wad, dmc.wad

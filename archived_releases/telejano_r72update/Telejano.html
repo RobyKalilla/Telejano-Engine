@@ -1,0 +1,915 @@
+<HTML dir="LTR" lang="en">
+<HEAD>
+<TITLE>Telejano 7.0 Readme</TITLE>
+<STYLE>
+<!--
+BODY { font-size: 12px; font-family: Comic Sans MS, helvetica, sans-serif; color: #000000; background-color: #FFFFFF }
+-->
+</STYLE>
+</HEAD>
+<BODY>
+
+<H1 align="center"><IMG src="fiend451.jpg" border="0" alt="Telejano Quake Engine"></H1>
+<H1 align="center">
+Telejano Quake Engine 7.0<BR>
+<A href="http://telejano.berlios.de">http://telejano.berlios.de</A>
+</H1>
+
+<HR width="50%">
+
+<H3>About This Release:</H3>
+<BLOCKQUOTE>
+<P>Alpha MOD Player: 669, amf, dsm, far, gdm, imf, it, m15, med, mod, mtm, okt, s3m, stm, stx, ult, uni, xm. LoadHUD, UnloadHUD feature. FadeModels.</P>
+</BLOCKQUOTE>
+
+<H3>Reporting Bugs/Problems:</H3>
+<BLOCKQUOTE>
+<P><B>Wikipage:</B><BR>
+<A href="http://telejano.berlios.de">http://telejano.berlios.de</A></P>
+
+<P><B>Forums:</B><BR>
+<A href="http://www.quakesrc.org">http://www.quakesrc.org</A><BR>
+<A href="http://forums.inside3d.com">http://forums.inside3d.com</A></P>
+
+<P><B>Author:</B><BR>
+<A href="mailto:421621@ingta.unizar.es">Tei</A></P>
+</BLOCKQUOTE>
+
+<H3>Installation:</H3>
+<UL><LI>Unzip the files to your Quake folder with subdirectory extracting enabled. You should now have a telejano.exe, telejano.html, fiend451.jpg, and a telejano folder.</LI></UL>
+
+<H3>Running Telejano:</H3>
+<UL>
+  <LI><FONT face="Courier New, Courier">telejano.exe -width 640 -height 480 -conwidth 
+    640 -bpp 16 -winmem 32</FONT><BR>
+    This will load Telejano with 640x480 resolution, 16 bit color depth, and 32 
+    megabytes of RAM allocated to memory.</LI>
+  <LI><FONT face="Courier New, Courier">telejano.exe -width 640 -height 480 -conwidth 
+    640 -bpp 32 -winmem 64</FONT><BR>
+    This will load Telejano with 640x480 resolution, 32 bit color depth, and 64 
+    megabytes of RAM allocated to memory.</LI>
+  <LI><FONT face="Courier New, Courier">telejano.exe -width 800 -height 600 -conwidth 
+    800 -bpp 32 -winmem 64</FONT><BR>
+    This will load Telejano with 800x600 resolution, 32 bit color depth, and 64 
+    megabytes of RAM allocated to memory.</LI>
+  <LI><FONT face="Courier New, Courier">telejano.exe -width 1024 -height 768 -conwidth 
+    1024 -bpp 32 -winmem 64</FONT><BR>
+    This will load Telejano with 1024x768 resolution, 32 bit color depth, and 
+    64 megabytes of RAM allocated to memory.</LI>
+  <LI><FONT face="Courier New, Courier">telejano.exe -width 1600 -height 1200 
+    -conwidth 1600 -bpp 32 -winmem 128</FONT><BR>
+    This will load Telejano with 1600x1200 resolution, 32 bit color depth, and 
+    128 megabytes of RAM allocated to memory.</LI>
+</UL>
+<UL>
+  <li><font face="Courier New, Courier">-data &lt;eyecandy mod folder&gt;</font><br>
+    This additional command line will load a eyecandy mod (texturepack, skinpack, 
+    modelpack, soundpack, hudpack, etc..)</li>
+  <LI><FONT face="Courier New, Courier">-game &lt;modfolder&gt;</FONT><BR>
+    This additional command line will load a mod</LI>
+  <LI><FONT face="Courier New, Courier">+map &lt;mapname.bsp&gt;</FONT><BR>
+    This additional command line will load a map</LI>
+  <LI><FONT face="Courier New, Courier">-game &lt;modfolder&gt; +map &lt;mapname.bsp&gt;</FONT><BR>
+    These additional command lines will load a mod and then load a map in the 
+    mod</LI>
+</UL>
+
+<hr width="50%" noshade>
+<p> </p>
+<h3>New version notes:</h3>
+<p><b>About This version:<br>
+  </b></p>
+<ul>
+  <li>matrix camera shotage mode</li>
+  <li> sound_eco effect bf1942 style </li>
+  <li> r_heartbeat </li>
+  <li> chase_active 2, zenit view </li>
+  <li> chase_active 3, view from chase or the nearest info_intermission </li>
+  <li> fix skins to enable some mods to work (Malice, etc..) </li>
+  <li> crono programable execution </li>
+  <li> better half-life maps compatibility </li>
+  <li> better heighfields collision code</li>
+  <li> screenshots in custom path, capture_dir (disk, path,etc..) </li>
+  <li> better wait command </li>
+  <li> small bugfixes</li>
+  <li>small speedups </li>
+</ul>
+<br>
+) matrix_effect
+<p>activate a matrix style animation. Designed for help modders to look the player 
+  model actually is a cool feature to trig in middel of a combat. The rendering 
+  is not adapted yet to support this feature and background become dark somethimes 
+  (but is a good side effect)</p>
+<p><br>
+  ) sound_eco, sound_ecovol</p>
+<p>generate eco sounds with ecovol volume</p>
+<p><br>
+  ) r_heartbeat</p>
+<p>activate heart beat sound effect</p>
+<p>) chase_active 2</p>
+<p>view from zenit with chase_angle angle</p>
+<p>) chase_active 3</p>
+<p>chase view with info_intermission detection for auxiliar cam</p>
+<p><br>
+  ) setcrono</p>
+<p>set step, command, times to exec the command</p>
+<p>) env_ </p>
+<p>experimental.</p>
+<p><br>
+  ) capture_dir</p>
+<p>support capture screenshot_tga in other dir or disk</p>
+<p>) wait </p>
+<p>support a number of delays to avoid the need for long wait alias groups </p>
+<p><br>
+  ) r_beamadjust</p>
+<p>0 - normal quake (no visual fix)<br>
+  1 - relaxed fix (visual fix x/y)<br>
+  2 - full fix (visual fix x/y/z)</p>
+<p><br>
+</p>
+<h3>- - -</h3>
+<p><b>Old version notes:</b></p>
+<blockquote>
+  <p><b>New sound loader that enable mod playing ( 18 new sound formats!). </b></p>
+</blockquote>
+<p>Commands:</p>
+<p>start a mod (from sountrack folder):</p>
+<blockquote>
+  <p><font face="Courier New, Courier, mono">playmod &lt;mod&gt;<br>
+    playmod </font></p>
+</blockquote>
+<p>setting sound volume:</p>
+<blockquote>
+  <p><font face="Courier New, Courier, mono">setmodvolume &lt;value&gt;</font></p>
+</blockquote>
+<p>setting a new module:</p>
+<blockquote>
+  <p><font face="Courier New, Courier, mono">smodname &lt;modname&gt;</font></p>
+</blockquote>
+<p>reseting your mod:</p>
+<blockquote>
+  <p><font face="Courier New, Courier, mono">stopmod<br>
+    resetmod </font></p>
+</blockquote>
+<p>Place your mod files in the /quake/soundtrack folder, this may change in the 
+  next version.</p>
+<p>Code from QBism proyect. MikMod GPL player.</p>
+<p><b>Console HUD Control System</b></p>
+<p>Commands:</p>
+<p><font face="Courier New, Courier, mono">loadhud &lt;hudname&gt; &lt;org&gt; 
+  &lt;x&gt; &lt;y&gt; &lt;tag&gt;<br>
+  loadhud &lt;hudname&gt; &lt;org&gt; &lt;x&gt; &lt;y&gt; </font></p>
+<p><font face="Courier New, Courier, mono">unload &lt;tag&gt;</font></p>
+<p>Load and unload external images to custom screen locations, use custom origins:</p>
+<p>NW 0,NE 1,SW 2,SE 3,CC 4,CN 5,CS 6,CW 7,CE 8</p>
+<p>Example:</p>
+<p><font face="Courier New, Courier, mono">loadhud bar.tga 0 20 10<br>
+  loadhud bar.tga 2 10 10<br>
+  loadhud tele.tga 0 10 10</font></p>
+<p>&nbsp;</p>
+<h3>- - -</h3>
+<p><b>Old version notes:</b></p>
+<blockquote>
+<p><b>Wops! new version release with new stuff.. the people favorite R_Efflies 
+    2, that force flies fx on dead bodies. <br>
+    You can use EF_BRIGHTFIELD to use enable this effect, or set a invisible model 
+    to use_FLIES1, example:<br>
+    </b></p>
+  <p><b>fx_invismodelflies.mdl<br>
+    {<br>
+        use_FLIES1<br>
+    <br>
+    }<br>
+    </b></p>
+  <p><b>place this code in your models.txt file.<br>
+    </b></p>
+  <p><b>Another interesting feature is ***ALFA*** .md3 support. The loader work, 
+    and for some decors stuff you can use .md3 files. No multipart support. No 
+    good alpha support. No players support. Untested for weapons. Untested poly 
+    limits.<br>
+    </b></p>
+  <p><b>And the last big one is makula &amp; tei  rskybox!. Now you can use animated 
+    skybox. Place a skybox.txt file in your script folder, with that content:<br>
+    </b></p>
+  <p><b>0<br>
+    {    <br>
+        file snow1<br>
+        delay 0.4<br>
+    }<br>
+    </b></p>
+  <p><b>1<br>
+    { <br>
+      file snow1<br>
+       delay 0.5 <br>
+    }<br>
+    </b></p>
+  <p><b>This will force a animation cicle from snow1 to snow1. You can have a 
+    maximun to 99 frames. Place your env skybox in gfx/env/ has usual.<br>
+    </b></p>
+  <p><b>News!... </b></p>
+  <p><b>New  modding method.  The new Telejano use "Telejano" folder for is private 
+    data, AND has the main game folder. Id1 wil be never used has the main folder, 
+    but old stuff will be still loaded from id1. This folder IS NOT A MOD. Dont 
+    do telejano -game telejano and spect something new, this folder is not a mod 
+    (yet).<br>
+    </b></p>
+  <p><b>Oh! I forget.  New cvar controls:<br>
+    </b></p>
+  <p>centerprint_blend  - control the high-contrast mode for centerprints <br>
+    mod_prydon - activate the prydon mode<br>
+    softshadow - activate the soft shadows<br>
+    r_efflies - control the flies on dead bodies<br>
+    <br>
+  </p>
+</blockquote>
+<h3>- - -</h3>
+<blockquote>       
+  <p><b>mod_hdigits</b>, health digits on display<br>
+    <b>mod_showbbox</b> reenabled<br>
+    ModelScripts 2.0!<br>
+    HudModels re-enabled<br>
+    better lighting for some effects</p>
+</blockquote>
+<h3>- - - </h3>
+<p><br>
+</p>
+<blockquote>       
+  <p>Fix some modelscript problems. Now fully work for .bsp, .md2 and .spr
+models.<br>
+    New debug for textures cvars: <b>debug_textures_fail</b>, <b>debug_textures_open</b><br>
+    Texture loader is now faster and more robust.<br>
+    <b>mod_handicap</b> its a *hack* to multiplier (&gt;1) or div (&lt;1)
+the      default health of monsters.<br>
+    Has suggested, new texture for bubbles and s_light, with light effect
+for      s_light. <br>
+    10 new crosshairs included from TomazQuake package. </p>
+  </blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p>Minimap. </p>
+     
+  <p>You now have the abolity to draw a minimap dinamically from your Z location.
+    And to show/unshot with the minmap cvar. (0/1/2/3, off by default, runautomap
+    command to refresh/generate). This is a beta feature. Expect some changes.</p>
+     
+  <p>Internal RouteBuilder</p>
+     
+  <p>On work. Not ready to show this tech with KiU2.</p>
+     
+  <p>menu_image</p>
+     
+  <p>Now work, and dont crash if the image doesnot exist. </p>
+     
+  <p>smokefire</p>
+     
+  <p>This "untested" rscript key now work. Run the techdemo kiu2-demo    
+ to test, or winter mod.</p>
+     
+  <p>rscripts</p>
+     
+  <p>Now work as expected. Some problems fixed.</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>       
+  <p>Fix texture loader. (v6.0 where a break built), add more FPS options
+(working      on!), more menu management commands (working on). Other minor
+fix or speed      enhancements. Code cleanup.</p>
+</blockquote>
+<h3>- - - </h3>
+<p>Tons of bugs and fix. Some features. Some small bugs still exist. (coronas+mirror,
+  texscale, etc..)</p>
+<blockquote>  
+  <p>New features:</p>
+     
+  <p><b>showvar &lt;var to&gt; &lt;var from&gt;</b></p>
+     
+  <p>Copy cvar and is data to cvar</p>
+     
+  <p>ex: showvar menu_1 gl_fogenabled, will move "gl_fogenable 0" to     
+menu_1 cvar.</p>
+     
+  <p><b>bindefault menu</b></p>
+     
+  <p>reset bindlist to a builting config,</p>
+     
+  <p><b>toggletext</b></p>
+     
+  <p>toggle the intensity color of string</p>
+     
+  <p><b>OnConnect </b></p>
+     
+  <p>event triggered after a connection</p>
+     
+  <p><b>OnTimedemoEnd </b></p>
+     
+  <p>event triggered after a timedemo</p>
+     
+  <p><b>profile.cfg</b></p>
+     
+  <p>profiling script, please wait while profile your system</p>
+     
+  <p>ex: exec profile.cfg</p>
+     
+  <p><b>better r_autofoot</b></p>
+     
+  <p>better step sound in tpak file and new sound for strong monsters</p>
+     
+  <p><b>sound_block</b></p>
+     
+  <p>cvar that control "walls block sound". by default on.</p>
+     
+  <p><b>debug_textures 2</b></p>
+     
+  <p>new value for this cvar with more debugging, the new code support more
+paths.(but      need more working to support fuhquake paths)</p>
+     
+  <p><b>TE_LAVASPLASH</b></p>
+     
+  <p>new impresive lavasplash effect.</p>
+     
+  <p><b>cl_grenclassic</b></p>
+     
+  <p>change the gray intensity of grenades (255 for full white, 0 black smoke)</p>
+     
+  <p><b>r_cloudplane feature</b></p>
+     
+  <p>"infinite" plane with Z control, texture control and scale control. 
+   Try with the WIND demo and r_dosky 0.</p>
+     
+  <p><b>timedemo &lt;demoprofile&gt;</b></p>
+     
+  <p>new timedemo feature, accept a param. After the timedemo is completed,
+fps      will be copy to fps_&lt;demoprofile&gt; and OnTimedemoend event will
+be called</p>
+     
+  <p>ex: timedemo withoutgeocaustic</p>
+     
+  <p><b>mark.cfg</b></p>
+     
+  <p>official bechmark config file. To test speed agains other engines. Note:
+    Timedemo dont benefict from all Telejano speedups.</p>
+     
+  <p><b>demopause</b></p>
+     
+  <p>to pause a demo while saving (untested)</p>
+     
+  <p> </p>
+  </blockquote>
+<h3>- - - </h3>
+<p><b>Old version notes:</b></p>
+<p></p>
+<blockquote>  
+  <p>Fixed coronas trough walls. Reactivated some extended protocol stuff
+(alpha,      etc..) </p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>  
+  <p>Better docs, as user suggestions. Fix the grenade. Automagicall footstep
+    on bots, players and monsters! (check "r_autofoot 2" value). Better 
+   LocalMenus editor.</p>
+     
+  <p>Whe need more LAN feedback to enhance game.</p>
+</blockquote>
+<h3>- - - </h3>
+<p>Some new r_auto features to emulate wind. A full screen editor for LocalMenus
+  (typing "emenus")</p>
+<p>new cvars/commands:</p>
+<ul>
+  <li>emenus, will start the LocalMenus editor (alpha)</li>
+  <li>r_autowindx, r_autowindy,r_autowindz</li>
+  <li>r_autofogfog, 0/1/2 </li>
+  <li>more strong netcode agains packet overflow</li>
+  <li>etc...</li>
+</ul>
+<h3>- - - </h3>
+<blockquote>  
+  <p>Fixed look of particles with fog. Fixed packet overflow.Fixed teleport
+particles.      <br>
+    Some small speedups and enhaced limits. This is BETA. Some stuff is disabled
+    (TomazQuake related)</p>
+     
+  <p>A new WFX effect. Do "r_autohell &lt;number of burners&gt;" at      console
+in a map with lava. Maybe 32. This is beta... need some changes (     can
+look better )</p>
+     
+  <p><a href="http://telejano.berlios.de/wiki3/">PLEASE REPORT IF THIS BUILD
+WORK      IN LAN </a></p>
+     
+  <p>Thanks JudicatorOmega for the template.menu.txt file<br>
+    Thanks [HFX] for is textures. "menu.tga" is designed from is work.</p>
+     
+  <p><b>Thanks to people that provide feedback</b>. Feedback is coding fuel.</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>       
+  <p>From years the Client/Server architecture where broken. Maybe from TomazQuake
+    engines... and now.. Where <b>FIXED!</b>.. you can now use Telejano as
+a dedicated      server, or a network client, and you can mix Telejano and
+Darkplaces engines      in the Server/Client rol, for Standard Quake games.</p>
+     
+  <p>This is my testbed:</p>
+</blockquote>
+<p>start telejano5 -dedicated +map dm6<br>
+  start telejano5 +connect localhost </p>
+<blockquote>     
+  <p>this work in my system. If crash in your system/lan/internet, please
+do that:</p>
+</blockquote>
+<p>start telejano5 -dedicated +map dm6 +impaim 0<br>
+  start telejano5 +connect localhost -condebug +impaim 0</p>
+<blockquote>       
+  <p>..and send me a qconsole.zip file (the qconsole.log is in your mod/id1
+folder)</p>
+     
+  <p>About menus:</p>
+     
+  <p>slider : usefull to draw sliders<br>
+    combobox : usefull to work with combobox<br>
+    mul: to mult or div values<br>
+    add: to add or substract values<br>
+    bound : to bound to a range<br>
+    concat : to concat strings<br>
+    toggle: now toggle support a range<br>
+    menu : load a menu ("menu main" to load a main.menu.txt file )<br>
+    Old command vars Inc, Dec, Mov work the same as before.</p>
+     
+  <p>menu_image : background menu image, you can provide a custom background
+image      for your localmenus</p>
+     
+  <p>Local Menus suggestions:</p>
+</blockquote>
+<ul>
+  <li>Made your own folder in id1</li>
+  <li><b>id1/ricky/</b></li>
+  <li>place the standard menu.txt files or your new ones and main</li>
+  <li>customize all the data...</li>
+  <li> place a custom gfx in the folder, and set as image with menu_image
+"ricky/back.tga"      or the appropiate name</li>
+  <li>Whe like to see your work. Feel free to post in Telejano Website in
+a new      page, or to post a link to your work. </li>
+</ul>
+<blockquote>     
+  <p>Standard LocalMenus where crap. You can design much better and usefull
+menus.      Whe need menus for mods with tons of options. Menus for "ridiculous
+remote",      etc.. </p>
+</blockquote>
+<h3>- - - </h3>
+<p>Menus!... fixed the sound menu, added keys to others menus. Finished the
+localmenus    stuff.</p>
+<blockquote>  
+  <p>Show localmenus with "exec main.menu.txt" command. Move in the      menu
+with the "[" and "]" keys.<br>
+    Select options with "ENTER" key.</p>
+     
+  <p>You can customize your localmenus. If you have a interesting localmenu
+for      mod <i>&lt;name of your prefered mod&gt;</i> send <a
+ href="mailto:421621@ingta.unizar.es">me</a>      and will list at the <a
+ href="http://telejano.berlios.de">telejano web page</a>.</p>
+</blockquote>
+<h3>- - - </h3>
+<p>Some stuff.. and HUD entitys. Example:</p>
+<blockquote>  
+  <pre>void () TestHUD=<br>{<br> local vector org;<br> local entity hud;</pre>
+     
+  <pre> hud = spawn();<br> setmodel(hud,"pics/tex.pcx");</pre>
+     
+  <pre> org_x = 10;//x<br> org_y = 10;//y<br> org_z = 2;//ORG_ type<br><br> hud.origin = org;<br> hud.alpha =1;//alpha<br><br>};</pre>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>       
+  <p>JPG support, singleplayer optimizations, new grass layer.</p>
+     
+  <p>The new layer work with key "grass2", the spec is:</p>
+     
+  <p><font face="Courier New, Courier, mono">grass2 &lt;name model&gt; &lt;density
+    seed&gt;</font></p>
+     
+  <p> Example:</p>
+     
+  <p><font face="Courier New, Courier, mono">texturename<br>
+    {<br>
+    grass textures/rock.mdl 0.5<br>
+    grass2 textures/grassx.mdl 0.8<br>
+    }</font></p>
+     
+  <p>By gamers request, this cvar now will save to .cfg file:<br>
+  </p>
+     
+  <p><font face="Courier New, Courier, mono">cl_sidespeed<br>
+    cl_forwardspeed<br>
+    cl_backspeed<br>
+    cl_upspeed<br>
+    sv_maxspeed<br>
+    sv_gravity </font></p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <ul>
+    <li> fixed the long pathnames bug</li>
+    <li>fixed the big particle bug</li>
+    <li>added firstperson mode (you can see yourself body, from 1ST perstpective)
+             
+      <ul>
+        <li><font face="Courier New, Courier, mono">firstperson</font> 0/1
+default            0</li>
+        <li><font face="Courier New, Courier, mono">toggleviewmode</font>
+rotate            from chase_cam, firstpersona, and normal views</li>
+             
+      </ul>
+    </li>
+    <li>added new keys for rscrips (BETA)</li>
+    <li>added models scripts, "mscripts" (BETA)</li>
+    <li>etc...</li>
+     
+  </ul>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p>Tei/Majula Type1 and Type2 Grass support.</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <ul>
+    <li>r_autobubbleglobal 0/1 default 1, generate randownly bubbles underwater.</li>
+    <li>mod_lsig 0/1 default 0, show a laser sight. </li>
+    <li>r_auto* features now work with skybox.</li>
+     
+  </ul>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p>Hee... underwater fx from QMB engine. GeoDetails that improve lighting
+with      a subtel random light pattern.</p>
+     
+  <p>And r_autobubbles for a automatically generation of buubles nderwater.</p>
+     
+  <p>try:</p>
+     
+  <ul>
+    <li>gl_caustics</li>
+    <li>gl_geocaustics</li>
+    <li>r_autobubbles</li>
+     
+  </ul>
+     
+  <p>If you get the wrong thing(all blue). Deactivate this stuff and the old
+gl_detail      stuff.</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>       
+  <p>I dont remenber, because I am working in the SPX engine. Maybe only the
+fix      for .spr entitys</p>
+     
+  <p>to get MFX_ effect aplied. Test Prydon Gate with this engine to see a
+fire.spr      enhanced. </p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>       
+  <p>New:</p>
+     
+  <ul>
+    <li>logo </li>
+    <li>icon </li>
+    <li>more commands: (from tq146)<br>
+      <font face="Courier New, Courier, mono">toggle <br>
+      triggerlist <br>
+      trigger <br>
+      reset <br>
+      accum <br>
+      inc <br>
+      mov <br>
+      dec <br>
+      set <br>
+      mapname <br>
+      viewpos <br>
+      tracepos <br>
+      fog <br>
+      auto2zone <br>
+      zone <br>
+      savezone <br>
+      loadzone <br>
+      menu_misc2 <br>
+      unbindall <br>
+      unbind <br>
+      teleclear <br>
+      telecheat <br>
+      cheat_jump <br>
+      cheatme <br>
+      hr <br>
+      demlist <br>
+      cfglist <br>
+      modlist <br>
+      maplist <br>
+      savemapcfg </font> </li>
+    <li>more cvars: (from tq146)<br>
+      <font face="Courier New, Courier, mono">mod_progs "game.dat" <br>
+      r_autofluor "2" <br>
+      mod_cityofangels "0" <br>
+      mod_showlight "0" <br>
+      * mod_extendedparticle "1" <br>
+      mod_predator "0" <br>
+      * autofovmax "50" <br>
+      * mod_zwater "0" <br>
+      * extra_fx "1" <br>
+      * zone_end "2048" <br>
+      * zone_start "1" <br>
+      * zone_enable "0" <br>
+      * zone_speed "0" <br>
+      * zone_fogred "0" <br>
+      * zone_fogblue "0" <br>
+      * zone_foggreen "0" <br>
+      * gl_detailscale "4" <br>
+      * gl_dither "1" <br>
+      gl_fontalt "0" <br>
+      * gl_detail "1" <br>
+      gl_decalfolder "mapmodel" <br>
+      gl_themefolder "textures" <br>
+      gl_smallparticles "1" <br>
+      gl_emulatesoftwaremode "0" <br>
+      gl_xrayblast "1" <br>
+      * r_ambient2 "3" <br>
+      * r_ambient "2" <br>
+      * gl_sun "2" <br>
+      * gl_sun_z "4000" <br>
+      * gl_sun_y "200" <br>
+      * gl_sun_x "140" <br>
+      * gl_cull "0" <br>
+      fpscroak "0" <br>
+      watermap "0" <br>
+      r_dosky "1" <br>
+      r_staticfx "1" <br>
+      r_autozing "0" <br>
+      r_autolightday "0" <br>
+      r_autofogwater "1" <br>
+      r_autorain "0" <br>
+      r_autosnow "0" <br>
+      r_autotele "1" <br>
+      r_autolava "2" <br>
+      sv_dismin "0.1" <br>
+      sv_skyflattern "16" <br>
+      sv_skyspeedscale "2" <br>
+      sv_skydim "32" <br>
+      sv_skyvalue "1" <br>
+      debug_textures "0" <br>
+      telecheat_z "0" <br>
+      telecheat_y "0" <br>
+      telecheat_x "0" <br>
+      chase_trans "0" <br>
+      cl_stepsound "0" <br>
+      cl_bobq2 "2" </font> </li>
+    <li>Static Standard FX ( <font face="Courier New, Courier, mono">extra_fx</font>
+      0/1/2/3/4... 32 ) </li>
+     
+  </ul>
+     
+  <p>Total CVARS: 253<br>
+    Total COMMANDS: 178 </p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>       
+  <p><b>ZONES! (beta)</b></p>
+     
+  <p>Smooth transition from fog setting, rain, snow, storms, ...</p>
+     
+  <p>Commands:</p>
+     
+  <ul>
+    <li><b>zone</b> show zone settings </li>
+    <li><b>loadzone</b> load new transitions settings from zone/ folder </li>
+    <li>savezone (<i>disabled</i>) save zone_ values in a .cfg file in the
+zone/        folder </li>
+    <li>auto2zone (<i>disabled</i>) copy fog values to zone values </li>
+    <li><b>zone_enable</b> enable transition smoother </li>
+    <li><b>zone_fog* </b>new fog settings </li>
+    <li><b>zone_start</b> fog start </li>
+    <li><b>zone_end</b> fog end </li>
+     
+  </ul>
+     
+  <p><b>How work?</b></p>
+     
+  <p>define new transitions status (zones) in the zone/ folder as .cfg files.
+    load with loadzone &lt;name&gt;,</p>
+     
+  <p><b>loadzone stormblue</b> will load stormblue.cfg </p>
+</blockquote>
+<h3> - - - </h3>
+<blockquote>       
+  <p>New gamma builtin settings : +ambient lux, -palette lux.</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p><b>gl_detailscale </b>change detail scale, default is 4.</p>
+     
+  <p><b>extra_fx</b> control the extra fx for tents (beta) </p>
+     
+  <p><b>r_ambient </b>base light for models </p>
+     
+  <p><b>telecheat</b> , <b>teleclear</b> teleport cheat </p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <h3></h3>
+     
+  <ul>
+    <li> CheapAlert <a
+ href="http://telejano.berlios.de/wiki3/index.php/DetailTextures">detail 
+     textures</a>, with enhanced dither. </li>
+     
+  </ul>
+     
+  <p><tt><a href="http://telejano.berlios.de/wiki3/index.php/gl_detail">gl_detail</a>
+    0/1 </tt><br>
+    ( default is 1 )</p>
+     
+  <p>will load grayscale detail texture from "texture" folder</p>
+     
+  <ul>
+    <li> Enhacend <a
+ href="http://telejano.berlios.de/wiki3/index.php/FogWater">fogwater</a>
+     and other stuff. I am working here. </li>
+    <li>Warning: "<tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/gl_emulationsoftwaremode">gl_emulationsoftwaremode</a>"
+      dont work properly with detail textures</tt> </li>
+    <li>Readme reformateed as html. With <a
+ href="http://telejano.berlios.de">wiki</a>        links. </li>
+     
+  </ul>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>       
+  <p>No new features, only fix and optimizations:</p>
+  </blockquote>
+<ul>
+  <li> firebug workaround    </li>
+  <li>coronas trough doors workaround<br>
+  </li>
+  <li> "<a href="http://telejano.berlios.de/wiki3/index.php/ThunderCats">thundercats</a>"
+    references removed<br>
+  </li>
+  <li><a href="http://telejano.berlios.de/wiki3/index.php/ThanksPage">credits</a>
+    moved to console<br>
+  </li>
+  <li>Others fix.. </li>
+</ul>
+<blockquote>     
+  <p>Support for ".TPAK" files. A .tpak file is a .pak file. <b>The new extension
+is only for Telejano</b>. Can help    people to generate content Only for
+telejano, and mantain compatibility for    others engines. With .tpak files,
+you can force a progs.dat for general    engines, and other (inside the .tpak
+file) for Telejano.</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p><br>
+    <tt><a href="http://telejano.berlios.de/wiki3/index.php/r_autozing">r_autozing</a></tt>
+    0/1/...M (good value is 200~300)<br>
+    generate random thunders from sky<br>
+    (default off)</p>
+     
+  <p><tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/mod_cityofangels">mod_cityofangels</a></tt>
+    0/1/2/3/4/5/6/7/8/666 <br>
+    DMSP alike feature: populate the level with monsters.<br>
+    (default off)</p>
+     
+  <p><tt><a href="http://telejano.berlios.de/wiki3/index.php/fog">fog</a></tt>
+    &lt;red&gt; &lt;blue&gt; &lt;green&gt;<br>
+    handfull alternate from gl_fog* cvars. From darkplaces    engine</p>
+     
+  <p>minor fixeds and speedups</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p><tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/mod_showlight">mod_showlight</a></tt>
+    0/1<br>
+    show light entitys in the level<br>
+    (default off)</p>
+     
+  <p><tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/r_autofluor">r_autofluor</a></tt>
+    0/1/2/3/4<br>
+    generate flares from light_fluoro "light" sources.    (Default level 2)</p>
+     
+  <p>minor fixeds and speedups</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p>Not soo much. Internal new architecture for Hazes and "fx_" models. 
+   Now is not needed <br>
+    a REAL null model. The engine as a hardcoded null model. Because that,
+the      new telejano.mdl<br>
+    dont need these "fx_" models. If you need old teiq engines, please   
+  unpak first these old<br>
+    fx_* models. Then install the new telejano.pak as usual.<br>
+    Not need of    teipartex.pak file!, the telejano.pak itself pak is files.
+This simplifice    managing.</p>
+     
+  <p>From old version (i forget this):<br>
+    "mod_showlight" ... show light entitys of level. Usefull    for mappers,
+and curious people :D</p>
+     
+  <p>By suggestion of Makulo, a new light_fluoro handling is designed. <i>BETA</i>
+    level!<br>
+    now look cool but its not smart. Then only can draw from ceil light, and
+is      draw from wall<br>
+    lights not show 100% ok. Will try to improve    this.</p>
+     
+  <p>Anyway, It work. Test in this maps: e4m1 (cool!) and    dm3 (humm...)</p>
+     
+  <p>The default level for fx is too high. (i have forget to raise down for
+release)<br>
+    <tt><a href="http://telejano.berlios.de/wiki3/index.php/r_autofluor">r_autofluor</a></tt>
+    0/1/2/3..5/6<br>
+    default value is 5, please raise down to 3 that is a safe value for fps.<br>
+    value 6 is reserved for true makule volumetric-light emulation (with focus
+     particle, <br>
+    with    the haze particles, or with a new special flare (directional flares?).</p>
+     
+  <blockquote>         
+    <p><b>Planning:</b><br>
+      Time over to code something about ambient sound, but i will look for
+good        rains sounds, and lava<br>
+      sounds      sooon. And... maybe, windtunnels sounds... (maybe)</p>
+  </blockquote>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p>External particles textures <i>ALFA    SUPPORT</i>, place external .tga
+files      in your &lt;textures&gt;/particle folder. Maybe "quake\id1\textures\particles"
+    or "quake\mod\textures\particles". <i>ALFA</i> set provided.    Please,
+post in the wiki url to new PublicDomain or GPL particles sets. (will    test
+substitutions ..)</p>
+     
+  <p><tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/mod_extendedparticle">mod_extendedparticle</a>
+  </tt>0/1<br>
+    cvar that control advanced look of wizzard, hellknight    &amp; blood.</p>
+     
+  <p><tt><a href="http://telejano.berlios.de/wiki3/index.php/misc_model">misc_model</a></tt><br>
+    builtin support    for this entity, model encoded in model is precache,
+set, and makestatic.</p>
+     
+  <p><tt><a href="http://telejano.berlios.de/wiki3/index.php/item_mdl">item_mdl</a></tt><br>
+    builtin support    for this entity, model encoded in message is precache,
+set, and  makestatic.</p>
+     
+  <p><tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/gl_decalfolder">gl_decalfolder</a></tt>
+&lt;mapmodel folder&gt;</p>
+     
+  <p>Not a usefull one :I , that make a smart substitution    of load models,
+yo call *tree.mdl, then is load from &lt;mapmodel folder&gt;.    You can set
+&lt;mapmodel folder&gt; to alienmapmodels, metalmodels,    junglemodels,etc..
+This and gl_themefolder fill the "theme" barrier. ( default    "mapmodel"
+)</p>
+     
+  <p><tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/gl_themefolder">gl_themefolder</a></tt>
+&lt;texture folder&gt; </p>
+     
+  <p>A very cool one!.. ( designed for "<a
+ href="http://telejano.berlios.de/wiki3/index.php/Durandal:Myrmidoom">Durandal:Myrmidoom</a>"
+    )<br>
+    you can    change on-the-fly (map loading) the folder where the textures
+is search. This    open the way to work with "themes". Ex: Jungle, Desert,
+Dust, Darklands,    Metal, Blood, etc.. just with different sets of textures
+(.tga, .pcx.. )</p>
+     
+  <p> ( default value "textures" )</p>
+</blockquote>
+<h3>- - - </h3>
+<blockquote>     
+  <p>BIG <a href="http://telejano.berlios.de/wiki3/index.php/BugReport">bug</a>
+fix that stop to load mod with name big than 4    letters (?) </p>
+     
+  <p><tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/gl_xrayblast">gl_xrayblast</a></tt>
+    0/1 <br>
+    Light FX in the end of lightning blast.<br>
+    (on by default)</p>
+     
+  <p><tt><a href="http://telejano.berlios.de/wiki3/index.php/r_autotele">r_autotele</a></tt>
+    0/1/2<br>
+    new value "2" generate a "final-meltdown dimensional teleport"      fx
+for teleports.<br>
+    (off by default)</p>
+     
+  <p><tt><a
+ href="http://telejano.berlios.de/wiki3/index.php/gl_emulationsoftwaremode">gl_emulationsoftwaremode</a></tt>
+    with values 0/1/2 added for a "automanaged" filtering for textures/models.<br>
+    1/2 values emulate "look &amp; feel" of Software Rendering in the    
+ quake engine.<br>
+    (off by default)<br>
+    <br>
+    <tt><a href="http://telejano.berlios.de/wiki3/index.php/cvarlist">cvarlist</a></tt>
+    <br>
+    command that    list all cvars (engine cvars, and user cvars)</p>
+</blockquote>
+<h3>- - - </h3>
+<p> </p>
+<br>
+<br>
+</body>
+</html>

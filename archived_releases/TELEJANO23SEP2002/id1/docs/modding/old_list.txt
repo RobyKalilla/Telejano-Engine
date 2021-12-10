@@ -1,0 +1,451 @@
+//////////////////////
+//
+// CMDLIST
+//
+
+   joyadvancedupdate
+   force_centerview
+   cvarlist
+   toggle  [NEW]
+   triggerlist  [NEW]
+   trigger [NEW]
+   reset [NEW]
+   accum [NEW]
+   inc [NEW]
+   mov [NEW]
+   dec [NEW]
+   set [NEW]
+   mapname [NEW]
+   viewpos [NEW]
+   tracepos [NEW]
+   fog [NEW]
+   timedemo
+   playdemo
+   stop
+   record
+   disconnect
+   entities
+   -mlook
+   +mlook
+   -klook
+   +klook
+   impulse
+   -jump
+   +jump
+   -use
+   +use
+   -attack
+   +attack
+   -speed
+   +speed
+   -moveright
+   +moveright
+   -moveleft
+   +moveleft
+   -strafe
+   +strafe
+   -lookdown
+   +lookdown
+   -lookup
+   +lookup
+   -back
+   +back
+   -forward
+   +forward
+   -right
+   +right
+   -left
+   +left
+   -movedown
+   +movedown
+   -moveup
+   +moveup
+   -showscores
+   +showscores
+   cd
+   soundinfo
+   soundlist
+   stopsound
+   playvol
+   play
+   auto2zone  [NEW]
+   zone [NEW]
+   savezone [NEW]
+   loadzone [NEW]
+   pointfile
+   timerefresh
+   sizedown
+   sizeup
+   screenshot
+   resetTextures
+   loadsky   
+   gl_texturemode
+   vid_savecurrentmode
+   vid_describemodes
+   vid_describemode
+   vid_describecurrentmode
+   vid_nummodes
+   test2
+   test
+   net_stats
+   port
+   maxplayers
+   listen
+   slist
+   profile
+   edictcount
+   edicts
+   edict
+   menu_misc2  [NEW]
+   menu_quit
+   help
+   menu_misc
+   menu_video
+   menu_sound
+   menu_keys
+   menu_controls
+   menu_options
+   menu_setup
+   menu_multiplayer
+   menu_save
+   menu_load
+   menu_singleplayer
+   menu_main
+   togglemenu
+   condump
+   clear
+   messagemode2
+   messagemode
+   toggleconsole
+   unbindall  [NEW]
+   unbind  [NEW]
+   bind
+   teleclear  [NEW]
+   telecheat  [NEW]
+   cheat_jump  [NEW]
+   cheatme  [NEW]
+   hr  [NEW]
+   demlist  [NEW]
+   cfglist  [NEW]
+   modlist  [NEW]
+   maplist  [NEW]
+   savemapcfg  [NEW]
+   qcexec
+   mcache
+   viewprev
+   viewnext
+   viewframe
+   viewmodel
+   stopdemo
+   demos
+   startdemos
+   give
+   save
+   load
+   ping
+   kick
+   prespawn
+   begin
+   spawn
+   pause
+   kill
+   color
+   tell
+   say_team
+   say
+   version
+   noclip
+   name
+   reconnect
+   connect
+   changelevel
+   restart
+   maps
+   map
+   fly
+   notarget
+   god
+   quit
+   status
+   path
+   centerview
+   bf
+   v_cshift
+   wait
+   cmd
+   alias
+   echo
+   exec
+   stuffcmds
+   unaliasall
+   unalias
+   cmdlist
+   flush
+
+
+//
+// 178 commands
+//
+///////////////////////////////////
+//
+//  CVARLIST
+//
+
+*   cl_viewangles_up "70"
+*   cl_viewangles_down "80"
+    joywwhack2 "0.0"
+    joywwhack1 "0.0"
+    joyyawsensitivity "-1.0"
+    joypitchsensitivity "1.0"
+    joysidesensitivity "-1.0"
+    joyforwardsensitivity "-1.0"
+    joyyawthreshold "0.15"
+    joypitchthreshold "0.15"
+    joysidethreshold "0.15"
+    joyforwardthreshold "0.15"
+    joyadvaxisv "0"
+    joyadvaxisu "0"
+    joyadvaxisr "0"
+    joyadvaxisz "0"
+    joyadvaxisy "0"
+    joyadvaxisx "0"
+    joyadvanced "0"
+    joyname "joystick"
+*   joystick "0"
+    m_filter "0"
+    mod_progs "game.dat"  [NEW]
+    r_autofluor "2"  [NEW]
+    mod_cityofangels "0"  [NEW]
+    mod_showlight "0"  [NEW]
+*   mod_extendedparticle "1"  [NEW]
+    mod_predator "0" [NEW]
+*   autofovmax "50"  [NEW]
+*   m_side "0.8"
+*   m_forward "1"
+*   m_yaw "0.022"
+*   m_pitch "0.022000"
+*   in_mlook "1"
+*   sensitivity "44"
+*   lookstrafe "0"
+*   lookspring "1.000000"
+    cl_nolerp "0" 
+    cl_shownet "0"
+    cl_anglespeedkey "1.5"
+    cl_pitchspeed "150"
+    cl_yawspeed "140"
+    cl_movespeedkey "2.0"
+    cl_sidespeed "350"
+*   cl_backspeed "400.000000"
+*   cl_forwardspeed "400.000000"
+    cl_upspeed "200"
+*   _cl_color "0"
+*   _cl_name "Tei"
+*   _snd_mixahead "0.1"
+    snd_show "0"
+    snd_noextraupdate "0"
+    ambient_fade "100"
+    ambient_level "0.3"
+    bgmbuffer "4096"
+*   bgmvolume "1.000000"
+    loadas8bit "0"
+    precache "1"
+*   volume "0.7"
+    nosound "0"
+*   mod_zwater "0"  [NEW]
+*   extra_fx "1"  [NEW]
+*   zone_end "2048"  [NEW]
+*   zone_start "1" [NEW]
+*   zone_enable "0" [NEW]
+*   zone_speed "0" [NEW]
+*   zone_fogred "0" [NEW]
+*   zone_fogblue "0" [NEW]
+*   zone_foggreen "0" [NEW]
+*   gl_detailscale "4" [NEW]
+*   gl_dither "1" [NEW]
+    gl_fontalt "0" [NEW]
+*   gl_detail "1" [NEW]
+    gl_decalfolder "mapmodel" [NEW]
+    gl_themefolder "textures" [NEW]
+    gl_smallparticles "1" [NEW]
+    gl_emulatesoftwaremode "0" [NEW]
+    gl_xrayblast "1" [NEW]
+*   r_ambient2 "3" [NEW]
+*   r_ambient "2" [NEW]
+*   gl_sun "2" [NEW]
+*   gl_sun_z "4000" [NEW]
+*   gl_sun_y "200" [NEW]
+*   gl_sun_x "140" [NEW]
+*   gl_cull "0" [NEW]
+    fpscroak "0" [NEW]
+    watermap "0" [NEW]
+    r_dosky "1" [NEW]
+    r_staticfx "1" [NEW]
+*   gl_particle_fire "1" 
+*   print_center_to_console "0"
+*   gl_particles "1"
+    gl_wireonly "0"
+    gl_wireframe "0"
+    gl_showpolys "0"
+*   mapshots "0"
+*   skybox_spin "0"
+*   impaim "1"
+*   gl_fbr "1"
+*   gl_caustics "0"
+*   gl_envmap "0"
+*   r_bobbing "1"
+*   gl_glows "1"
+*   r_wave "8"
+*   con_alpha "0.5"
+*   sbar_alpha "1"
+*   centerfade "0"
+*   gl_foggreen "0.5"
+*   gl_fogblue "0.4"
+*   gl_fogred "0.6"
+*   gl_fogend "800.0"
+*   gl_fogstart "50.0"
+*   gl_fogenable "0"
+    slowmo "1.0"
+    gl_doubleeys "1"
+    gl_keeptjunctions "1"
+    gl_nocolors "0"
+*   gl_clear "1"
+*   gl_finish "0"
+    r_speeds "0"
+    r_novis "0"
+*   r_mirroralpha "1"
+    r_dynamic "1"
+*   r_wateralpha "1"
+*   r_shadows "1"
+    r_drawviewmodel "1"
+    r_norefresh "0"
+    dbrightness "0"
+*   brightness "1.0"
+*   gl_triplebuffer "1"
+    showpause "1"
+    showturtle "0"
+    showram "1"
+    scr_conspeed "900"
+*   viewsize "100.000000"
+    fov "90"
+    scr_printspeed "8"
+    scr_centertime "2"
+    gl_particle_limiter "5" [NEW]
+    pr_checkextension "1"
+    gl_max_size "2048.000000"
+*   _windowed_mouse "1"
+*   vid_stretch_by_2 "1"
+*   vid_config_y "600"
+*   vid_config_x "800"
+*   _vid_default_mode_win "3"
+*   _vid_default_mode "0"
+*   _vid_wait_override "0"
+*   vid_nopageflip "0"
+    vid_wait "0"
+    vid_mode "1.000000"
+    r_autozing "0" [NEW]
+    r_autolightday "0" [NEW]
+    r_autofogwater "1" [NEW]
+    r_autorain "0" [NEW]
+    r_autosnow "0" [NEW]
+    r_autotele "1" [NEW]
+    r_autolava "2" [NEW]
+    sv_dismin "0.1" [NEW]
+    sv_skyflattern "16" [NEW]
+    sv_skyspeedscale "2" [NEW]
+    sv_skydim "32" [NEW]
+    sv_skyvalue "1" [NEW]
+    sv_stepsize "18"
+    sv_nostep "0"
+    sv_aim "1000"
+    sv_idealpitchscale "0.8"
+    sv_accelerate "10"
+ S  sv_maxspeed "320"
+    sv_stopspeed "100"
+    edgefriction "2"
+ S  sv_friction "4"
+ S  sv_gravity "800"
+    sv_maxvelocity "2000"
+*   _config_modem_hangup "AT H"
+*   _config_modem_init ""
+*   _config_modem_clear "ATZ"
+*   _config_modem_dialtype "T"
+*   _config_com_modem "1"
+*   _config_com_baud "57600"
+*   _config_com_irq "4"
+*   _config_com_port "0x3f8"
+    hostname "fiend"
+    net_messagetimeout "300"
+*   gl_subdivide_size "128"
+*   saved4 "0"
+*   saved3 "0"
+*   saved2 "0"
+*   saved1 "0"
+*   savedgamecfg "0"
+    scratch4 "0"
+    scratch3 "0"
+    scratch2 "0"
+    scratch1 "0"
+    gamecfg "0"
+    nomonsters "0"
+*   samplerate "0"
+    con_notifytime "3"
+    temp1 "0"
+    pausable "1"
+    coop "0"
+    deathmatch "0.000000"
+    debug_textures "0" [NEW]
+    developer "0"
+    skill "1.000000"
+ S  noexit "0"
+    samelevel "0"
+ S  teamplay "0"
+ S  timelimit "0"
+ S  fraglimit "0"
+    serverprofile "0"
+    sys_ticrate "0.05"
+    host_speeds "0"
+    host_framerate "0"
+*   max_fps "80"
+*   show_fps "1"
+    telecheat_z "0" [NEW]
+    telecheat_y "0" [NEW]
+    telecheat_x "0" [NEW]
+ S  cmdline " "
+    registered "1"
+    chase_trans "0" [NEW]
+    chase_active "0"
+    chase_right "0"
+    chase_up "16"
+    chase_back "100"
+*   v_gamma "1"
+    v_kickpitch "0.6"
+    v_kickroll "0.6"
+    v_kicktime "0.5"
+    cl_bobup "0.5"
+    cl_bobcycle "0.6"
+    cl_stepsound "0" [NEW]
+    cl_bobq2 "2" [NEW]
+    cl_bob "0.02"
+    cl_rollangle "2.0"
+    cl_rollspeed "200"
+    scr_ofsz "0"
+    scr_ofsy "0"
+    scr_ofsx "0"
+    gl_cshiftpercent "100"
+    cl_crossy "0"
+    cl_crossx "0"
+*   crosshair "5"
+    v_idlescale "0"
+    v_ipitch_level "0.3"
+    v_iroll_level "0.1"
+    v_iyaw_level "0.3"
+    v_ipitch_cycle "1"
+    v_iroll_cycle "0.5"
+    v_iyaw_cycle "2"
+    v_centerspeed "500"
+    v_centermove "0.15"
+
+//
+// 253 cvars
+//
+///////////////////////////////////
