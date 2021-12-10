@@ -1,0 +1,63 @@
+------------------------------------------------------------------------------
+MSS -- Memory Supervision System version 1.2
+Copyright (C) 1998  Juan Jesus Alcolea Picazo and Peter Palotas
+
+MSS Normal Logfile.
+
+WARNING: Environment variable `MSS_CFG' not set. Unable to use global 
+         configuration file.
+WARNING: No local configuration file found either, using hard-coded default 
+         values only.
+
+Option List:
+
+LogFileName                         mss.log        (default)
+GenerateSpecialLog                  No             (default)
+SpecialLogFileName                  slog.mss       (default)
+LogToSTDOUT                         No             (default)
+LogToSTDERR                         No             (default)
+ShowLogs                            Yes            (default)
+WatchLimits                         Yes            (default)
+WatchSize                           32             (default)
+WatchValue                          0xA8           (default)
+CheckOnDealloc                      Yes            (default)
+CheckAllOnAlloc                     No             (default)
+FillMemOnAlloc                      Yes            (default)
+FillMemOnAllocValue                 0x98           (default)
+FillMemOnDeAlloc                    Yes            (default)
+FillMemOnDeAllocValue               0x186          (default)
+ExitOnWarning                       No             (default)
+FalseAllocFails                     0              (default)
+ExtraNewline                        Yes            (default)
+WordWrap                            Yes            (default)
+WarnOnAllNULLDeallocs               Yes            (default)
+ZeroLenAllocReturnNULL              Yes            (default)
+
+------------------------------------------------------------------------------
+Logging started at Sun Aug 18 18:05:33 2002
+
+LOG: (unknown function) (line 707 of E:\@ src\QSRC\teiq3\sys_win.c) 
+     allocated 67108864 bytes at 063D0040 using `malloc'.
+
+------------------------------------------------------------------------------
+MSG: Listing info about allocated blocks at end(?) of program:
+INFO: 1 blocks currently allocated.
+INFO: 67108864 bytes of memory currently used.
+INFO: 67108864 bytes maximum memory used.
+
+Method       Times Called    Successful Calls
+---------------------------------------------
+new                 0                0 
+new[]               0                0 
+delete              0                0 
+delete[]            0                0 
+malloc              1                1 
+xmalloc             0                0 
+realloc             0                0 
+xrealloc            0                0 
+strdup              0                0 
+calloc              0                0 
+free                0                0 
+cfree               0                0 
+xfree               0                0 
+------------------------------------------------------------------------------

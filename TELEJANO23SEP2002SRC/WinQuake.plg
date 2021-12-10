@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: winquake - Win32 GL Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\t\CONFIG~1\Temp\RSP182.tmp" with contents
+[
+/nologo /G5 /ML /W3 /Zd /Ox /Ot /Oa /Og /Oi /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "GLQUAKE" /Fr".\release_gl/" /Fp".\release_gl/WinQuake.pch" /YX /Fo".\release_gl/" /Fd".\release_gl/" /FD /GA /c 
+"E:\@ src\QSRC\teiq3\sv_main.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\t\CONFIG~1\Temp\RSP182.tmp" 
+Creating temporary file "C:\DOCUME~1\t\CONFIG~1\Temp\RSP183.tmp" with contents
+[
+.\dxsdk\sdk\lib\dxguid.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib mss.lib libpng.lib zlib.lib jpeg.lib /nologo /subsystem:windows /incremental:no /pdb:".\release_gl/telejano4.pdb" /machine:I386 /out:"d:\quake\telejano4.exe" 
+".\release_gl\cl_demo.obj"
+".\release_gl\cl_input.obj"
+".\release_gl\cl_main.obj"
+".\release_gl\cl_parse.obj"
+".\release_gl\cl_staticfx.obj"
+".\release_gl\cl_tent.obj"
+".\release_gl\sv_collision.obj"
+".\release_gl\sv_main.obj"
+".\release_gl\sv_move.obj"
+".\release_gl\sv_phys.obj"
+".\release_gl\sv_user.obj"
+".\release_gl\host.obj"
+".\release_gl\host_cmd.obj"
+".\release_gl\net_dgrm.obj"
+".\release_gl\net_loop.obj"
+".\release_gl\net_main.obj"
+".\release_gl\net_win.obj"
+".\release_gl\net_wins.obj"
+".\release_gl\net_wipx.obj"
+".\release_gl\menu.obj"
+".\release_gl\menu_help.obj"
+".\release_gl\menu_main.obj"
+".\release_gl\menu_multi.obj"
+".\release_gl\menu_options.obj"
+".\release_gl\menu_quit.obj"
+".\release_gl\menu_single.obj"
+".\release_gl\png_loader.obj"
+".\release_gl\gl_crosshair.obj"
+".\release_gl\gl_draw.obj"
+".\release_gl\gl_flares.obj"
+".\release_gl\gl_font.obj"
+".\release_gl\gl_hc_texes.obj"
+".\release_gl\gl_md2.obj"
+".\release_gl\gl_mdl.obj"
+".\release_gl\gl_mirror.obj"
+".\release_gl\gl_model.obj"
+".\release_gl\gl_part.obj"
+".\release_gl\gl_part2.obj"
+".\release_gl\gl_refrag.obj"
+".\release_gl\gl_rlight.obj"
+".\release_gl\gl_rmain.obj"
+".\release_gl\gl_rmisc.obj"
+".\release_gl\gl_rscript.obj"
+".\release_gl\gl_rsurf.obj"
+".\release_gl\gl_screen.obj"
+".\release_gl\gl_sky.obj"
+".\release_gl\gl_sprite.obj"
+".\release_gl\gl_texman.obj"
+".\release_gl\gl_vidnt.obj"
+".\release_gl\gl_warp.obj"
+".\release_gl\pr_cmds.obj"
+".\release_gl\pr_edict.obj"
+".\release_gl\pr_exec.obj"
+".\release_gl\cd_win.obj"
+".\release_gl\snd_dma.obj"
+".\release_gl\snd_mem.obj"
+".\release_gl\snd_mix.obj"
+".\release_gl\snd_win.obj"
+".\release_gl\chase.obj"
+".\release_gl\cmd.obj"
+".\release_gl\common.obj"
+".\release_gl\conproc.obj"
+".\release_gl\console.obj"
+".\release_gl\crc.obj"
+".\release_gl\cvar.obj"
+".\release_gl\in_win.obj"
+".\release_gl\keys.obj"
+".\release_gl\mathlib.obj"
+".\release_gl\sbar.obj"
+".\release_gl\sys_win.obj"
+".\release_gl\view.obj"
+".\release_gl\wad.obj"
+".\release_gl\world.obj"
+".\release_gl\zone.obj"
+".\release_gl\winquake.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\t\CONFIG~1\Temp\RSP183.tmp"
+<h3>Output Window</h3>
+Compiling...
+Command line warning D4002 : ignoring unknown option '/Ot'
+Command line warning D4002 : ignoring unknown option '/Oa'
+Command line warning D4002 : ignoring unknown option '/Og'
+Command line warning D4002 : ignoring unknown option '/Oi'
+Command line warning D4002 : ignoring unknown option '/Ob2'
+sv_main.c
+Linking...
+
+
+
+<h3>Results</h3>
+telejano4.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

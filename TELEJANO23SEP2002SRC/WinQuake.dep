@@ -1,0 +1,2787 @@
+# Microsoft Developer Studio Generated Dependency File, included by WinQuake.mak
+
+.\cl_demo.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\cl_input.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\cl_main.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\cl_parse.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\cl_staticfx.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\cl_tent.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\sv_main.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\sv_move.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\sv_phys.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\sv_user.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\host.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\host_cmd.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\net_dgrm.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\net_dgrm.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\net_loop.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\net_loop.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\net_main.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\net_win.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\net_dgrm.h"\
+	".\net_loop.h"\
+	".\net_ser.h"\
+	".\net_wins.h"\
+	".\net_wipx.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\net_wins.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\net_wins.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\net_wipx.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\net_wipx.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\menu.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\menu.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\menu_help.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\menu.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\menu_main.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\menu.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\menu_multi.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\menu.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\menu_options.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\menu.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\menu_quit.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\menu.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\menu_single.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\menu.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_crosshair.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_draw.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_flares.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_font.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_hc_texes.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_md2.c : \
+	".\anorm_dots.h"\
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_mdl.c : \
+	".\anorm_dots.h"\
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_mirror.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_model.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_mirror.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_part.c : \
+	".\anorms.h"\
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_part2.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_refrag.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_rlight.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_rmain.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_mirror.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_rmisc.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_mirror.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_rscript.c : \
+	".\bsp_render.h"\
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\gl_rscript.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_rsurf.c : \
+	".\bsp_render.h"\
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_mirror.h"\
+	".\gl_model.h"\
+	".\gl_rscript.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_screen.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_sky.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_sprite.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_texman.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_vidnt.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\gl_warp.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\gl_warp_sin.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\pr_cmds.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\pr_edict.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\pr_exec.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\cd_win.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\snd_dma.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\snd_mem.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\snd_mix.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\snd_win.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\chase.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\cmd.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\common.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\conproc.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\conproc.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\console.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\crc.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\cvar.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\in_win.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\keys.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\mathlib.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\sbar.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\sys_win.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\conproc.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\winquake.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\view.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\wad.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\winquake.rc : \
+	".\bg1.bmp"\
+	".\colorfull.ico"\
+	
+
+.\world.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
+
+.\zone.c : \
+	".\bspfile.h"\
+	".\cdaudio.h"\
+	".\client.h"\
+	".\cmd.h"\
+	".\common.h"\
+	".\console.h"\
+	".\crc.h"\
+	".\cvar.h"\
+	".\draw.h"\
+	".\gl_model.h"\
+	".\glquake.h"\
+	".\input.h"\
+	".\keys.h"\
+	".\mathlib.h"\
+	".\modelgen.h"\
+	".\mss.h"\
+	".\net.h"\
+	".\pr_comp.h"\
+	".\progdefs.q1"\
+	".\progs.h"\
+	".\protocol.h"\
+	".\quakedef.h"\
+	".\render.h"\
+	".\sbar.h"\
+	".\screen.h"\
+	".\server.h"\
+	".\sound.h"\
+	".\spritegn.h"\
+	".\sys.h"\
+	".\vid.h"\
+	".\view.h"\
+	".\wad.h"\
+	".\world.h"\
+	".\zone.h"\
+	"c:\archivos de programa\microsoft visual studio\vc98\include\basetsd.h"\
+	
